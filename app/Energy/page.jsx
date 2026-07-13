@@ -8,6 +8,7 @@ import Banner from "../Home/components/banner";
 import EnergyCategoryBar from "./Components/bar";
 import EnergyIndustriesSupport from "./Components/industries";
 import GeneratorCTA from "./Components/generator";
+import Energy from "./Components/energy";
 
 
 export default function EnergyPage() {
@@ -17,6 +18,7 @@ export default function EnergyPage() {
         <EnergyHero/>
         <EnergyAbout/>
         <EnergyCategoryBar/>
+        <Energy/>
         <EnergyCapabilities/>
         <EnergyIndustriesSupport/>
         <GeneratorCTA/>

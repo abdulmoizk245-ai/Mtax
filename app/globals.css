@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes border-light-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
