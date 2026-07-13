@@ -15,7 +15,7 @@ export default function BlazeHero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-16 md:px-12">
+      <div className="relative z-10 mx-auto w-full  px-6 py-16 md:px-12">
         <div className="max-w-xl">
           <h1 className="mb-2 text-4xl font-extrabold tracking-wide text-white md:text-6xl">
             BLAZE GROUP

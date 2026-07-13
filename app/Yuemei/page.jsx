@@ -5,8 +5,9 @@ import AboutYuemei from "./components/about";
 import FeatureSection from "./components/Features";
 import ProductRange from "./components/products";
 import YuemeiBanner from "./components/Banner";
-import ContactPage from "../Home/components/contact";
 import Footer from "../Components/footer";
+import Banner from "../Home/components/banner";
+import ContactPage from "../Components/contact";
 
 export default function Yuemei()
 {
@@ -19,6 +20,7 @@ export default function Yuemei()
         <ProductRange/>
         <YuemeiBanner/>
         <ContactPage/>
+        <Banner/>
         <Footer/>
         </>
     )

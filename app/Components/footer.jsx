@@ -1,4 +1,5 @@
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="w-full bg-[#1B2436] text-white">
       {/* Contact Info */}
@@ -19,7 +20,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="flex flex-col items-center justify-between gap-3 px-6 py-[14px] text-center text-[13px] text-white md:flex-row md:px-[42px] md:text-[15px]">
-        <p>© 2024 MTAX Group of Companies. All Rights Reserved.</p>
+        <p>© {currentYear} MTAX Group of Companies. All Rights Reserved.</p>
 
         <div className="flex items-center gap-1">
           <a href="#" className="transition hover:text-[#1687FF]">
@@ -29,7 +30,7 @@ export default function Footer() {
           <span>|</span>
 
           <a href="#" className="transition hover:text-[#1687FF]">
-            Terms & Conditions
+            Terms &amp; Conditions
           </a>
         </div>
       </div>

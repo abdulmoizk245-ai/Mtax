@@ -1,53 +1,60 @@
+
 import Image from "next/image";
 import Link from "next/link";
 
 export default function CSMHero() {
   return (
-    <section className="relative w-full min-h-[1020px] flex items-center overflow-hidden">
-      {/* Background image */}
-      <Image
-        src="/csm/hero.png"
-        alt="CSM Hero Background"
-        fill
-        priority
-        className="object-cover object-center"
-      />
+<section className="relative flex lg:h-[720px] w-full items-center overflow-hidden md:h-[600px]">
+  {/* Background Image */}
+  <Image
+    src="/csm/hero.png"
+    alt="CSM Chemical Solutions"
+    fill
+    priority
+    sizes="100vw"
+    className="object-cover object-center"
+  />
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#0b1a3b]/80" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full px-6 py-20 mb-20">
-        <h1 className="mb-4 text-5xl font-extrabold text-white tracking-wide">
+      <div className="relative z-10  w-full px-6 py-20 md:px-10 lg:px-14">
+        {/* Main Heading */}
+        <h1 className="lg:text-[72px] font-extrabold tracking-wide text-white sm:text-5xl">
           CSM
         </h1>
 
-        <h2 className="mb-6 max-w-xl text-2xl font-bold uppercase leading-snug text-white">
-          Reliable Chemical Solutions For{" "}
-          <span className="text-orange-400">Detergent</span> And{" "}
-          <span className="text-orange-400">Industrial</span> Manufacturing
+        {/* Subheading */}
+        <h2 className="mb-6 max-w-3xl text-xl font-bold uppercase leading-[1.5] text-white sm:text-2xl lg:text-[32px]">
+          Reliable Chemical Solutions for{" "}
+          <span className="text-[#1687FF]">Detergent</span> and{" "}
+          <span className="text-[#1687FF]">Industrial</span> Manufacturing
         </h2>
 
-        <p className="mb-10 max-w-lg text-sm leading-relaxed text-gray-300">
-          CSM, under MTAX Group of Companies, provides quality focused chemical
-          raw materials for detergent, cleaning and industrial manufacturing
-          sectors. With strong manufacturing capability, reliable supply and
+        {/* Description */}
+        <p className="mb-10 max-w-4xl text-sm leading-relaxed text-gray-300 lg:text-[20px] lg:mt-10">
+          CSM, under MTAX Group of Companies, provides quality-focused chemical
+          raw materials for detergent, cleaning, and industrial manufacturing
+          sectors. With strong manufacturing capability, reliable supply, and
           technical understanding, CSM supports businesses with consistent
           products and dependable service.
         </p>
 
-        <div className="flex flex-wrap gap-4">
+        {/* Buttons */}
+        <div className="flex flex-wrap items-center gap-4 ">
           <Link
             href="/CSM/products"
-            className="flex items-center gap-2 rounded-md bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 transition-colors"
+            className="flex items-center gap-3 rounded-md bg-[#1687FF] px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#0872DC]"
           >
-            Explore Products <span aria-hidden>→</span>
+            <span>Explore Products</span>
+            <span aria-hidden="true">→</span>
           </Link>
+
           <Link
-            href="/"
-            className="flex items-center gap-2 rounded-md border border-white px-5 py-2.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
+            href="/contact"
+            className="flex items-center gap-3 rounded-md border border-white px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-300 hover:border-[#1687FF] hover:bg-[#1687FF]"
           >
-            Contact for MTAX Group <span aria-hidden>→</span>
+            <span>Contact MTAX Group</span>
+            <span aria-hidden="true">→</span>
           </Link>
         </div>
       </div>

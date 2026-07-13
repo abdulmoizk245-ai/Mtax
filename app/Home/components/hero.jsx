@@ -41,7 +41,7 @@ export default function Homehero() {
               Innovation, Quality, & Excellence
             </h2>
 
-            <div className="relative mx-auto mt-2 h-[8px] w-[400px]">
+            <div className="relative mx-auto mt-2 h-[8px] w-full max-w-[400px]">
               {/* Start + End thin line */}
               <div
                 className="absolute left-0 top-1/2 h-[1px] w-full -translate-y-1/2"
@@ -64,14 +64,14 @@ export default function Homehero() {
           </div>
 
           {/* Paragraph */}
-          <p className="mx-auto mb-8 max-w-3xl text-[20px] leading-relaxed text-white/90 m">
+          <p className="mx-auto mb-8 max-w-3xl px-2 text-[15px] leading-relaxed text-white/90 sm:text-[17px] md:px-0 md:text-[20px]">
             A diversified business group delivering reliable products,
             industrial solutions, and services across multiple industries in
             Pakistan and beyond.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-40">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-40">
             <a
               href="/group-of-companies"
               className="rounded-[3px] px-6 py-3 text-[13px] font-semibold text-white shadow-md transition hover:opacity-90"
@@ -92,10 +92,10 @@ export default function Homehero() {
         </div>
       </section>
       {/* about section */}
-      <section className="w-full bg-white py-60">
-        <div className="mx-auto flex max-w-[1200px] ml-[30px] items-start gap-10 px-0">
+      <section className="w-full bg-white py-14 md:py-60">
+        <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-10 px-4 md:ml-[30px] md:flex-row md:items-start md:px-0">
           {/* Left Image */}
-          <div className="relative h-[402px] w-[554px] shrink-0">
+          <div className="relative h-[280px] w-full max-w-[554px] shrink-0 sm:h-[340px] md:h-[402px] md:w-[554px]">
             {/* Blue Border Behind Image */}
             <div className="absolute inset-0 rotate-[0.26deg] bg-[#1375E6]"></div>
 
@@ -111,8 +111,8 @@ export default function Homehero() {
           </div>
 
           {/* Right Content */}
-          
-            <div className="flex max-w-[620px] mt-8 translate-x-[350px] flex-col items-start text-start">
+
+            <div className="flex w-full max-w-[620px] flex-col items-start text-start md:mt-8 md:translate-x-[350px]">
               <div className="mb-6 bg-[#171d2c] px-4 py-2">
                 <h2 className="text-[30px] font-semibold uppercase leading-none text-white">
                   About MTAX Group

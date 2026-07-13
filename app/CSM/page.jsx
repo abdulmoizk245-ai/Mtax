@@ -4,8 +4,9 @@ import CSMHero from "./components/hero";
 import AboutCSM from "./components/about";
 import ProductRange from "./components/product";
 import WhyChooseCSM from "./components/whyChoose";
-import ContactPage from "./components/contact";
 import Footer from "../Components/footer";
+import ContactPage from "../Components/contact";
+import Banner from "../Home/components/banner";
 
 export default function CSM() {
   return (
@@ -16,6 +17,7 @@ export default function CSM() {
       <ProductRange />
       <WhyChooseCSM />
       <ContactPage />
+      <Banner/>
       <Footer />
     </>
   );

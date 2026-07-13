@@ -25,18 +25,16 @@ export default function MSBIHero() {
     <section className="relative w-full min-h-[640px] flex items-center overflow-hidden bg-[#0b1a3b]">
       {/* Background image */}
       <Image
-        src="/images/msbi-hero.png"
+        src="/msbi/Hero.jpg"
         alt="MSBI Hero Background"
         fill
         priority
         className="object-cover object-center"
       />
 
-      {/* Dark gradient overlay for text contrast */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0b1a3b]/95 via-[#0b1a3b]/75 to-[#0b1a3b]/20" />
-
+    
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-20 md:px-12">
+      <div className="relative z-10 mx-auto w-full  px-6 py-20 md:px-12">
         <h1 className="mb-2 text-4xl font-extrabold tracking-wide text-white md:text-6xl">
           MSBI
         </h1>

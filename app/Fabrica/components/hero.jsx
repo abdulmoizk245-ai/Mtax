@@ -4,18 +4,17 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function FabricaHero() {
   return (
-    <section className="relative w-full min-h-[620px] overflow-hidden bg-[#050b1f]">
-      {/* Background Image */}
+    <section className="relative min-h-[620px] w-full  w-full overflow-hidden bg-[#050b1f]">
       <Image
         src="/fabrica/hero.jpg"
         alt="Fabrica Textile Manufacturing"
         fill
         priority
-        className="object-cover object-center"
+        sizes="100vw"
+        className="object-contain "
       />
-
       {/* Content */}
-      <div className="relative z-10 mx-auto flex min-h-[620px] max-w-7xl items-center px-6 py-16 md:px-12">
+      <div className="relative z-10 mx-auto flex min-h-[620px] items-center px-6 py-16 md:px-12">
         <div className="max-w-xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-[#3aa0ff]">
             Premium Fabric Manufacturer
@@ -31,10 +30,9 @@ export default function FabricaHero() {
           </h2>
 
           <p className="mb-8 max-w-lg text-sm leading-relaxed text-gray-300 md:text-base">
-            At Fabrics, we combine advanced textile technology with a
-            commitment to quality and reliability. From premium fabrics to
-            expert support, we help your production run smoother and your
-            brand stand stronger.
+            At Fabrics, we combine advanced textile technology with a commitment
+            to quality and reliability. From premium fabrics to expert support,
+            we help your production run smoother and your brand stand stronger.
           </p>
 
           <Link
