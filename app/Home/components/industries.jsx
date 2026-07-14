@@ -44,7 +44,7 @@ export default function IndustriesSection() {
     <section className="w-full overflow-hidden bg-[#040D23]">
       {/* Heading */}
       <div className="pb-2 pt-6 md:pb-3 md:pt-8">
-        <h2 className="mx-auto w-full max-w-[1750px] text-2xl font-extrabold uppercase tracking-tight text-white sm:text-3xl md:text-4xl">
+        <h2 className="mx-auto w-full max-w-[1750px] text-[28px] font-extrabold uppercase tracking-tight text-white md:text-4xl">
           Industries We <span className="text-[#0D8CFF]">Serve</span>
         </h2>
       </div>

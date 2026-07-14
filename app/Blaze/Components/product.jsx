@@ -60,7 +60,7 @@ export default function BlazeProducts() {
         <div className="grid grid-cols-1 gap-7 lg:grid-cols-2 lg:gap-8">
           {/* Solar Brands and Products */}
           <div>
-            <h2 className="mb-5 text-center text-[15px] font-extrabold uppercase leading-tight text-white sm:text-[17px]">
+            <h2 className="mb-5 text-center text-[20px] font-extrabold uppercase leading-tight text-white md:text-[25px] lg:text-[20px]">
               Our Brands &amp; Products (Solar)
             </h2>
 
@@ -98,14 +98,14 @@ export default function BlazeProducts() {
                       className="object-cover object-center"
                     />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent" />
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent" /> */}
                   </div>
                 ))}
               </div>
 
               {/* Solar Description */}
               <div className="px-5 py-4 text-center">
-                <p className="text-[11px] leading-[1.5] text-[#566071] sm:text-[12px]">
+                <p className="text-[14px] leading-[1.5] text-[#566071] md:text-[16px] lg:text-[12px]">
                   We supply premium solar brands and components
                   <br className="hidden sm:block" /> for reliable, long-term
                   energy solutions.
@@ -116,7 +116,7 @@ export default function BlazeProducts() {
 
           {/* Interactive Work and Solutions */}
           <div>
-            <h2 className="mb-5 text-center text-[15px] font-extrabold uppercase leading-tight text-white sm:text-[17px]">
+            <h2 className="mb-5 text-center text-[20px] font-extrabold uppercase leading-tight text-white md:text-[25px] lg:text-[20px]">
               Our Work &amp; Solutions (Interactives)
             </h2>
 
@@ -148,8 +148,8 @@ export default function BlazeProducts() {
               </div>
 
               {/* Interactive Description */}
-              <div className="border-t border-[#EEF1F5] px-5 py-4 text-center">
-                <p className="text-[11px] leading-[1.5] text-[#566071] sm:text-[12px]">
+              <div className=" px-5 py-4 text-center">
+                <p className="text-[14px] leading-[1.5] text-[#566071] md:text-[16px] lg:text-[12px]">
                   We design, develop and market digital solutions
                   <br className="hidden sm:block" /> that help businesses grow
                   online.

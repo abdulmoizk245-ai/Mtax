@@ -119,18 +119,18 @@ export default function EnergyAbout() {
           </p>
 
           {/* Heading */}
-          <h2 className="text-[26px] font-extrabold leading-[1.15] text-[#272A2D] sm:text-[31px] lg:text-[34px]">
+          <h2 className="text-[26px] font-extrabold leading-[1.15] text-[#272A2D] md:text-[32px] lg:text-[34px]">
             Reliable Industrial Power Support
           </h2>
 
           {/* Description */}
           <div className="mt-4 max-w-[720px] space-y-4">
-            <p className="text-[12px] leading-[1.65] text-[#555B61] sm:text-[13px] lg:text-[14px]">
+            <p className="text-[14px] leading-[1.65] text-[#555B61] md:text-[16px] lg:text-[14px]">
               De Novo delivers dependable generator supply and industrial power
               support for commercial and project-based operations.
             </p>
 
-            <p className="text-[12px] leading-[1.65] text-[#555B61] sm:text-[13px] lg:text-[14px]">
+            <p className="text-[14px] leading-[1.65] text-[#555B61] md:text-[16px] lg:text-[14px]">
               We support power needs from 5kW to 1000kW with reliable
               coordination and responsive service.
             </p>

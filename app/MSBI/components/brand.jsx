@@ -57,7 +57,7 @@ export default function BrandsAndBenefits() {
     <section className="w-full bg-white px-5 py-12 md:px-8 lg:px-10">
       <div className="mx-auto w-full ">
         {/* Our Brands Heading */}
-        <h2 className="text-center text-[30px] font-extrabold uppercase leading-tight text-[#1D293D] sm:text-[36px] lg:text-[40px]">
+        <h2 className="text-center text-[30px] font-extrabold uppercase leading-tight text-[#1D293D] md:text-[36px] lg:text-[40px]">
           Our Brands
         </h2>
 
@@ -106,7 +106,7 @@ export default function BrandsAndBenefits() {
             Why Choose MSBI
           </p>
 
-          <h3 className="mt-3 text-[27px] font-extrabold uppercase leading-tight text-[#1D293D] sm:text-[34px] lg:text-[38px]">
+          <h3 className="mt-3 text-[27px] font-extrabold uppercase leading-tight text-[#1D293D] md:text-[34px] lg:text-[38px]">
             <span className="text-[#2D80F7]">Quality</span> Reliability &amp;{" "}
             <span className="text-[#2D80F7]">Global Reach</span>
           </h3>
@@ -136,7 +136,7 @@ export default function BrandsAndBenefits() {
               </h4>
 
               {/* Card Description */}
-              <p className="mt-4 max-w-[190px] text-[12px] leading-[1.65] text-[#414958] sm:text-[13px]">
+              <p className="mt-4 max-w-[190px] text-[14px] leading-[1.65] text-[#414958] md:text-[16px] lg:text-[13px]">
                 {benefit.description}
               </p>
             </article>

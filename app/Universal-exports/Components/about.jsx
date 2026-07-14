@@ -37,18 +37,18 @@ export default function AboutUniversalExports() {
             About Universal Exports
           </p>
 
-          <h2 className="mt-2 text-[27px] font-extrabold uppercase leading-[1.12] text-[#1D293D] sm:text-[32px] lg:text-[36px]">
+          <h2 className="mt-2 text-[27px] font-extrabold uppercase leading-[1.12] text-[#1D293D] md:text-[32px] lg:text-[36px]">
             Pure <span className="text-[#2587E8]">Crepe</span>, Premium Threads
           </h2>
 
           <div className="mt-5 max-w-[760px] space-y-4">
-            <p className="text-[12px] leading-[1.6] text-[#5C6470] sm:text-[13px] lg:text-[14px]">
+            <p className="text-[14px] leading-[1.6] text-[#5C6470] md:text-[16px] lg:text-[14px]">
               Universal Exports provides premium crepe fabrics and quality
               thread materials for fashion brands, manufacturers, and textile
               businesses.
             </p>
 
-            <p className="text-[12px] leading-[1.6] text-[#5C6470] sm:text-[13px] lg:text-[14px]">
+            <p className="text-[14px] leading-[1.6] text-[#5C6470] md:text-[16px] lg:text-[14px]">
               We focus on reliable sourcing, consistent supply, and trusted
               support to help businesses maintain smooth production and
               high-quality results.

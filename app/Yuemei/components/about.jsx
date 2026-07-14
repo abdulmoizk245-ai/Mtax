@@ -8,7 +8,7 @@ export default function AboutYuemei() {
         </span>
 
         {/* Heading */}
-        <h2 className="mt-4  text-[34px] font-extrabold uppercase leading-[1.25]  text-[#1D2A3A] md:text-[44px]">
+        <h2 className="mt-4  text-[30px] font-extrabold uppercase leading-[1.25]  text-[#1D2A3A] md:text-[36px] lg:text-[44px]">
           Reliable Embroidery Machines Backed <br className="hidden md:block" />
           By MTAX Group
         </h2>

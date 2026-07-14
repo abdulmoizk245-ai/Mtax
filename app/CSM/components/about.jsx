@@ -102,7 +102,7 @@ export default function AboutCSM() {
                 About CSM
               </p>
 
-              <h2 className="max-w-[760px] text-[27px] font-bold leading-[1.18] text-white sm:text-[32px] lg:text-[36px]">
+              <h2 className="max-w-[760px] text-[27px] font-bold leading-[1.18] text-white md:text-[32px] lg:text-[36px]">
                 Trusted Chemical Manufacturing
                 <br className="hidden sm:block" />
                 Backed by Industry Experience
@@ -110,7 +110,7 @@ export default function AboutCSM() {
 
               <div className="my-5 h-px w-full bg-gradient-to-r from-[#1687FF]/60 via-[#1687FF]/20 to-transparent" />
 
-              <p className="max-w-[760px] text-[13px] leading-[1.65] text-white/85 sm:text-[14px] lg:text-[15px]">
+              <p className="max-w-[760px] text-[14px] leading-[1.65] text-white/85 md:text-[16px] lg:text-[15px]">
                 CSM is a professional raw material chemical solutions company
                 within the MTAX Group of Companies, serving various industrial
                 sectors with high-quality raw materials and technical support.
@@ -119,7 +119,7 @@ export default function AboutCSM() {
                 cleaning, and personal care industries.
               </p>
 
-              <p className="mt-5 max-w-[760px] text-[13px] leading-[1.65] text-white/85 sm:text-[14px] lg:text-[15px]">
+              <p className="mt-5 max-w-[760px] text-[14px] leading-[1.65] text-white/85 md:text-[16px] lg:text-[15px]">
                 With a commitment to quality, consistency, and customer
                 satisfaction, we focus on building long-term partnerships that
                 help businesses improve performance, efficiency, and product
@@ -151,7 +151,7 @@ export default function AboutCSM() {
                     />
                   </div>
 
-                  <p className="whitespace-pre-line text-[12px] font-medium leading-[1.35] text-white sm:text-[13px]">
+                  <p className="whitespace-pre-line text-[14px] font-medium leading-[1.35] text-white md:text-[16px] lg:text-[13px]">
                     {feature.label}
                   </p>
                 </div>

@@ -35,7 +35,7 @@ export default function TextileSolutions() {
     >
       <div className="mx-auto w-full max-w-[1320px]">
         {/* Heading */}
-        <h2 className="mb-9 text-center text-[28px] font-extrabold uppercase leading-tight text-[#1C273A] sm:text-[34px] md:text-[40px]">
+        <h2 className="mb-9 text-center text-[28px] font-extrabold uppercase leading-tight text-[#1C273A] md:text-[36px] lg:text-[40px]">
           Our Textile{" "}
           <span className="text-[#2D80F7]">Solutions</span>
         </h2>
@@ -59,12 +59,12 @@ export default function TextileSolutions() {
               </div>
 
               {/* Title */}
-              <h3 className="mt-5 text-[15px] font-medium leading-tight text-[#1670EF] sm:text-[16px]">
+              <h3 className="mt-5 text-[20px] font-medium leading-tight text-[#1670EF] md:text-[25px] lg:text-[16px]">
                 {solution.title}
               </h3>
 
               {/* Description */}
-              <p className="mt-7 max-w-[245px] text-[14px] leading-[1.55] text-[#1D293D] sm:text-[15px]">
+              <p className="mt-7 max-w-[245px] text-[14px] leading-[1.55] text-[#1D293D] md:text-[16px] lg:text-[15px]">
                 {solution.description}
               </p>
             </article>

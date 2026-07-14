@@ -20,7 +20,7 @@ export default function UniversalExportsHero() {
       <div className="relative z-10 mx-auto w-full  px-6 py-16 sm:px-10 lg:px-14 xl:px-16">
         <div className="max-w-[560px]">
           {/* Main Heading */}
-          <h1 className="text-[34px] font-extrabold uppercase leading-none tracking-[-0.02em] text-white sm:text-[42px] lg:text-[48px]">
+          <h1 className="text-[34px] font-extrabold uppercase leading-none tracking-[-0.02em] text-white md:text-[42px] lg:text-[48px]">
             Universal Exports
           </h1>
 
@@ -30,13 +30,13 @@ export default function UniversalExportsHero() {
           </p>
 
           {/* Subheading */}
-          <h2 className="mt-2 text-[16px] font-bold uppercase leading-[1.4] text-white sm:text-[18px]">
+          <h2 className="mt-2 text-[26px] font-bold uppercase leading-[1.4] text-white md:text-[32px] lg:text-[18px]">
             Premium <span className="text-[#3193FF]">Crepe</span> Fabrics &amp;{" "}
             <span className="text-[#3193FF]">Threads</span>
           </h2>
 
           {/* Description */}
-          <p className="mt-6 max-w-[500px] text-[12px] leading-[1.65] text-white/80 sm:text-[13px] lg:text-[14px]">
+          <p className="mt-6 max-w-[500px] text-[14px] leading-[1.65] text-white/80 md:text-[16px] lg:text-[14px]">
             Universal Exports provides premium crepe fabrics and quality thread
             materials for brands, manufacturers, and textile businesses. We
             focus on reliable sourcing, consistent supply, and trusted support
@@ -44,14 +44,14 @@ export default function UniversalExportsHero() {
           </p>
 
           {/* Highlighted Text */}
-          <p className="mt-5 text-[12px] font-semibold leading-[1.5] text-white sm:text-[13px]">
+          <p className="mt-5 text-[14px] font-semibold leading-[1.5] text-white md:text-[16px] lg:text-[13px]">
             Quality materials, trusted by brands worldwide.
           </p>
 
           {/* Button */}
           <Link
             href="#crepe-fabrics"
-            className="mt-8 inline-flex items-center gap-2 rounded-[3px] bg-[#2587E8] px-5 py-3 text-[11px] font-semibold text-white shadow-[0_8px_22px_rgba(37,135,232,0.25)] transition duration-300 hover:bg-[#1674D3] sm:text-[12px]"
+            className="mt-8 inline-flex items-center gap-2 rounded-[3px] bg-[#2587E8] px-5 py-3 text-[13px] font-semibold text-white shadow-[0_8px_22px_rgba(37,135,232,0.25)] transition duration-300 hover:bg-[#1674D3] md:text-[14px] lg:text-[12px]"
           >
             <span>Explore Crepe Fabrics</span>
             <span aria-hidden="true">→</span>

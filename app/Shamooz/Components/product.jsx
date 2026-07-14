@@ -29,7 +29,7 @@ export default function ShamoozProductRange() {
     <section className="w-full bg-[#1B263A] px-5 py-10 md:px-8 lg:px-10">
       <div className="mx-auto w-full max-w-[1300px]">
         {/* Heading */}
-        <h2 className="mb-7 text-center text-[24px] font-extrabold uppercase leading-tight text-white sm:text-[28px] lg:text-[32px]">
+        <h2 className="mb-7 text-center text-[26px] font-extrabold uppercase leading-tight text-white md:text-[32px] lg:text-[32px]">
           Our Product Range
         </h2>
 
@@ -70,11 +70,11 @@ export default function ShamoozProductRange() {
 
               {/* Card Content */}
               <div className="min-h-[120px] px-4 pb-5 pt-9">
-                <h3 className="text-[12px] font-bold uppercase leading-tight text-white sm:text-[13px]">
+                <h3 className="text-[20px] font-bold uppercase leading-tight text-white md:text-[25px] lg:text-[13px]">
                   {product.title}
                 </h3>
 
-                <p className="mt-3 max-w-[310px] text-[10px] leading-[1.55] text-white/70 sm:text-[11px]">
+                <p className="mt-3 max-w-[310px] text-[14px] leading-[1.55] text-white/70 md:text-[16px] lg:text-[11px]">
                   {product.description}
                 </p>
               </div>

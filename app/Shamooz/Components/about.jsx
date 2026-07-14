@@ -47,12 +47,12 @@ export default function AboutShamooz() {
           </p>
 
           {/* Main Heading */}
-          <h2 className="mt-1 text-[23px] font-extrabold uppercase leading-[1.1] text-[#1687FF] sm:text-[28px] lg:text-[30px]">
+          <h2 className="mt-1 text-[26px] font-extrabold uppercase leading-[1.1] text-[#1687FF] md:text-[32px] lg:text-[30px]">
             Elegance in Every Stitch
           </h2>
 
           {/* Description */}
-          <p className="mt-3 max-w-[760px] text-[11px] leading-[1.55] text-[#596273] sm:text-[12px] lg:text-[13px]">
+          <p className="mt-3 max-w-[760px] text-[14px] leading-[1.55] text-[#596273] md:text-[16px] lg:text-[13px]">
             Shamooz celebrates the beauty of tradition with a modern fashion
             identity. Each outfit is thoughtfully created to offer distinctive
             looks using fine fabrics, intricate detailing, and thoughtful
@@ -70,11 +70,11 @@ export default function AboutShamooz() {
 
                 {/* Feature Text */}
                 <div>
-                  <h3 className="text-[10px] font-bold leading-tight text-[#176FE5] sm:text-[11px]">
+                  <h3 className="text-[20px] font-bold leading-tight text-[#176FE5] md:text-[25px] lg:text-[11px]">
                     {item.title}
                   </h3>
 
-                  <p className="mt-[2px] text-[9px] leading-[1.4] text-[#667080] sm:text-[10px]">
+                  <p className="mt-[2px] text-[14px] leading-[1.4] text-[#667080] md:text-[16px] lg:text-[10px]">
                     {item.description}
                   </p>
                 </div>

@@ -10,11 +10,11 @@ export default function ContactPage() {
           <div className="grid w-full items-center gap-8 md:grid-cols-[42%_58%] md:gap-6">
             {/* Left Content */}
             <div className="text-white">
-              <h2 className="text-[29px] font-extrabold uppercase leading-none tracking-tight sm:text-[32px]">
+              <h2 className="text-[29px] font-extrabold uppercase leading-none tracking-tight md:text-[32px]">
                 Get In Touch
               </h2>
 
-              <p className="mt-4 max-w-[390px] text-[17px] leading-[1.55] text-white sm:text-[19px] md:text-[20px]">
+              <p className="mt-4 max-w-[390px] text-[16px] leading-[1.55] text-white md:text-[18px] lg:text-[20px]">
                 We’d love to hear from you!
                 <br />
                 Whether you have questions about
@@ -62,7 +62,7 @@ export default function ContactPage() {
               {/* Submit */}
               <button
                 type="submit"
-                className="mt-3 flex h-[40px] w-full items-center justify-center rounded-[4px] bg-white text-[19px] font-bold text-[#1687FF] transition hover:bg-[#1687FF] hover:text-white"
+                className="mt-3 flex h-[40px] w-full items-center justify-center rounded-[4px] bg-white text-[15px] font-bold text-[#1687FF] transition hover:bg-[#1687FF] hover:text-white md:text-[16px] lg:text-[19px]"
               >
                 Submit
               </button>

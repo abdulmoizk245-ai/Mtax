@@ -19,19 +19,19 @@ export default function CSMHero() {
       {/* Content */}
       <div className="relative z-10  w-full px-6 py-20 md:px-10 lg:px-14">
         {/* Main Heading */}
-        <h1 className="lg:text-[72px] font-extrabold tracking-wide text-white sm:text-5xl">
+        <h1 className="text-[32px] font-extrabold tracking-wide text-white md:text-5xl lg:text-[72px]">
           CSM
         </h1>
 
         {/* Subheading */}
-        <h2 className="mb-6 max-w-3xl text-xl font-bold uppercase leading-[1.5] text-white sm:text-2xl lg:text-[32px]">
+        <h2 className="mb-6 max-w-3xl text-[26px] font-bold uppercase leading-[1.5] text-white md:text-[32px] lg:text-[32px]">
           Reliable Chemical Solutions for{" "}
           <span className="text-[#1687FF]">Detergent</span> and{" "}
           <span className="text-[#1687FF]">Industrial</span> Manufacturing
         </h2>
 
         {/* Description */}
-        <p className="mb-10 max-w-4xl text-sm leading-relaxed text-gray-300 lg:text-[20px] lg:mt-10">
+        <p className="mb-10 max-w-4xl text-sm leading-relaxed text-gray-300 md:text-[17px] lg:text-[20px] lg:mt-10">
           CSM, under MTAX Group of Companies, provides quality-focused chemical
           raw materials for detergent, cleaning, and industrial manufacturing
           sectors. With strong manufacturing capability, reliable supply, and

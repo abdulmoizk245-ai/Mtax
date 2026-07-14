@@ -70,11 +70,11 @@ export default function OurProduct() {
 
                 {/* Card Content */}
                 <div>
-                  <h3 className="text-[13px] font-bold uppercase leading-tight text-white sm:text-[14px]">
+                  <h3 className="text-[20px] font-bold uppercase leading-tight text-white md:text-[25px] lg:text-[14px]">
                     {product.title}
                   </h3>
 
-                  <p className="mt-1 max-w-[340px] text-[11px] leading-[1.45] text-white/80 sm:text-[12px]">
+                  <p className="mt-1 max-w-[340px] text-[14px] leading-[1.45] text-white/80 md:text-[16px] lg:text-[12px]">
                     {product.description}
                   </p>
                 </div>

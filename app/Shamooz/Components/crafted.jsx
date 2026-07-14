@@ -29,13 +29,13 @@ export default function CraftedElegance() {
       <div className="mx-auto grid w-full max-w-[1400px] grid-cols-1 items-center gap-8 md:grid-cols-[38%_62%] lg:gap-10">
         {/* Left Content */}
         <div>
-          <h2 className="text-[27px] font-extrabold uppercase leading-[1.08] tracking-[-0.02em] text-[#1C273A] sm:text-[31px] lg:text-[34px]">
+          <h2 className="text-[27px] font-extrabold uppercase leading-[1.08] tracking-[-0.02em] text-[#1C273A] md:text-[32px] lg:text-[34px]">
             Crafted for
             <br />
             Modern <span className="text-[#1687FF]">Elegance</span>
           </h2>
 
-          <p className="mt-4 max-w-[430px] text-[11px] leading-[1.55] text-[#626B78] sm:text-[12px] lg:text-[13px]">
+          <p className="mt-4 max-w-[430px] text-[14px] leading-[1.55] text-[#626B78] md:text-[16px] lg:text-[13px]">
             Explore our latest collections that embody feminine grace, refined
             details, and timeless beauty—designed to make every moment
             extraordinary.

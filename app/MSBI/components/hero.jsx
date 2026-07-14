@@ -35,7 +35,7 @@ export default function MSBIHero() {
     
       {/* Content */}
       <div className="relative z-10 mx-auto w-full  px-6 py-20 md:px-12">
-        <h1 className="mb-2 text-4xl font-extrabold tracking-wide text-white md:text-6xl">
+        <h1 className="mb-2 text-4xl font-extrabold tracking-wide text-white md:text-[44px] lg:text-[60px]">
           MSBI
         </h1>
 
@@ -43,7 +43,7 @@ export default function MSBIHero() {
           Premium Tires
         </p>
 
-        <h2 className="mb-6 max-w-2xl text-2xl font-extrabold uppercase leading-snug text-white md:text-4xl">
+        <h2 className="mb-6 max-w-2xl text-[26px] font-extrabold uppercase leading-snug text-white md:text-4xl">
           <span className="text-[#1375E6]">Powering</span> Progress
           Delivering Trust
         </h2>
@@ -61,10 +61,10 @@ export default function MSBIHero() {
                 {feature.icon}
               </div>
               <div>
-                <h3 className="text-sm font-bold text-white">
+                <h3 className="text-[20px] font-bold text-white md:text-[25px] lg:text-[14px]">
                   {feature.title}
                 </h3>
-                <p className="text-xs leading-relaxed text-gray-400">
+                <p className="text-[14px] leading-relaxed text-gray-400 md:text-[16px] lg:text-[12px]">
                   {feature.desc}
                 </p>
               </div>

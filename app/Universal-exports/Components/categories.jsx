@@ -39,7 +39,7 @@ export default function UniversalCategories() {
         {/* Main Card */}
         <div className="overflow-hidden rounded-[12px] border border-[#2C5794] bg-[#1A2C4A] px-5 py-6 shadow-[0_8px_25px_rgba(0,0,0,0.18)] sm:px-7">
           {/* Heading */}
-          <h2 className="mb-4 text-[15px] font-extrabold uppercase leading-none text-white sm:text-[17px]">
+          <h2 className="mb-4 text-[26px] font-extrabold uppercase leading-none text-white md:text-[32px] lg:text-[17px]">
             Our Categories
           </h2>
 
@@ -66,11 +66,11 @@ export default function UniversalCategories() {
 
                   {/* Content */}
                   <div className="flex flex-col justify-center px-4 py-4">
-                    <h3 className="text-[12px] font-bold leading-tight text-white sm:text-[13px]">
+                    <h3 className="text-[20px] font-bold leading-tight text-white md:text-[25px] lg:text-[13px]">
                       {category.title}
                     </h3>
 
-                    <p className="mt-2 text-[10px] leading-[1.5] text-white/80 sm:text-[11px]">
+                    <p className="mt-2 text-[14px] leading-[1.5] text-white/80 md:text-[16px] lg:text-[11px]">
                       {category.description}
                     </p>
                   </div>
@@ -99,7 +99,7 @@ export default function UniversalCategories() {
                     />
                   </div>
 
-                  <p className="mt-3 whitespace-pre-line text-[10px] font-medium leading-[1.35] text-white/85 sm:text-[11px]">
+                  <p className="mt-3 whitespace-pre-line text-[14px] font-medium leading-[1.35] text-white/85 md:text-[16px] lg:text-[11px]">
                     {benefit.title}
                   </p>
                 </div>

@@ -63,7 +63,7 @@ export default function AboutMSBI() {
             About MSBI
           </p>
 
-          <h2 className="text-[27px] font-extrabold uppercase leading-[1.12] text-[#1D2A3A] sm:text-[31px] lg:text-[40px]">
+          <h2 className="text-[27px] font-extrabold uppercase leading-[1.12] text-[#1D2A3A] md:text-[32px] lg:text-[40px]">
             <span className="block">Your Trusted</span>
 
             <span className="block">
@@ -73,12 +73,12 @@ export default function AboutMSBI() {
           </h2>
 
           <div className="mt-4 max-w-[680px] space-y-3">
-            <p className="text-[13px] leading-[1.5] text-[#596273] sm:text-[14px]">
+            <p className="text-[14px] leading-[1.5] text-[#596273] md:text-[16px] lg:text-[14px]">
               MSBI International specializes in the import of high-quality,
               trust, and durability for industrial and commercial needs.
             </p>
 
-            <p className="text-[13px] leading-[1.5] text-[#596273] sm:text-[14px]">
+            <p className="text-[14px] leading-[1.5] text-[#596273] md:text-[16px] lg:text-[14px]">
               We work with a global network to bring you reliable service and
               innovative solutions, delivering forward.
             </p>

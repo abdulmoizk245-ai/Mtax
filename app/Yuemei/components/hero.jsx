@@ -20,7 +20,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 mx-auto flex items-center px-6 py-16 md:px-12 lg:px-16">
         <div className="w-full max-w-[700px] mt-5">
-          <h1 className="text-6xl font-extrabold leading-tight tracking-tight md:text-7xl">
+          <h1 className="text-[36px] font-extrabold leading-tight tracking-tight md:text-[44px] lg:text-[72px]">
             YUEMEI
           </h1>
 

@@ -94,7 +94,7 @@ export default function EnergyIndustriesSupport() {
         <div className="relative px-1 pb-9 lg:border-r lg:border-[#88C72D]/45 lg:px-5 lg:pb-0 lg:pr-10">
           <SectionLabel>Industries We Serve</SectionLabel>
 
-          <h2 className="mt-4 text-[27px] font-bold leading-[1.08] text-white sm:text-[31px]">
+          <h2 className="mt-4 text-[27px] font-bold leading-[1.08] text-white md:text-[32px] lg:text-[31px]">
             Reliable Power
             <br />
             for Every Industry
@@ -136,7 +136,7 @@ export default function EnergyIndustriesSupport() {
         <div className="relative border-t border-white/10 px-1 py-9 lg:border-r lg:border-t-0 lg:border-[#88C72D]/45 lg:px-10 lg:py-0">
           <SectionLabel>Our Support</SectionLabel>
 
-          <h2 className="mt-4 text-[27px] font-bold leading-[1.08] text-white sm:text-[31px]">
+          <h2 className="mt-4 text-[27px] font-bold leading-[1.08] text-white md:text-[32px] lg:text-[31px]">
             Expert Support for
             <br />
             Better Power Planning

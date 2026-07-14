@@ -242,7 +242,7 @@ export default function WhyChooseCSM() {
               </p>
 
               {/* Heading */}
-              <h2 className="max-w-[560px] text-[29px] font-extrabold leading-[1.13] text-white sm:text-[35px] lg:text-[39px]">
+              <h2 className="max-w-[560px] text-[29px] font-extrabold leading-[1.13] text-white md:text-[35px] lg:text-[39px]">
                 Built on Quality, Reliability
                 <br />
                 and{" "}
@@ -288,11 +288,11 @@ export default function WhyChooseCSM() {
 
                     {/* Text */}
                     <div className="max-w-[350px]">
-                      <h3 className="text-[15px] font-bold leading-tight text-white sm:text-[16px]">
+                      <h3 className="text-[20px] font-bold leading-tight text-white md:text-[25px] lg:text-[16px]">
                         {reason.title}
                       </h3>
 
-                      <p className="mt-1 text-[11px] leading-[1.45] text-white/75 sm:text-[12px]">
+                      <p className="mt-1 text-[14px] leading-[1.45] text-white/75 md:text-[16px] lg:text-[12px]">
                         {reason.description}
                       </p>
                     </div>

@@ -88,7 +88,7 @@ export default function FeatureSection() {
 
           {/* Right Text */}
           <div>
-            <h2 className="mb-5 text-4xl font-extrabold leading-tight text-white md:text-5xl">
+            <h2 className="mb-5 text-[30px] font-extrabold leading-tight text-white md:text-[36px] lg:text-[48px]">
               Feature Points:
             </h2>
 
@@ -96,7 +96,7 @@ export default function FeatureSection() {
               {featurePoints.map((item, index) => (
                 <li
                   key={index}
-                  className="flex items-center gap-3 text-xl font-medium text-white/90 md:text-2xl"
+                  className="flex items-center gap-3 text-[16px] font-medium text-white/90 md:text-[18px] lg:text-[24px]"
                 >
                   <FaCheck className="shrink-0 text-base text-white md:text-lg" />
                   <span>{item}</span>
@@ -118,7 +118,7 @@ export default function FeatureSection() {
               </div>
 
               <div>
-                <h3 className="text-lg font-extrabold text-[#1375E6] md:text-xl">
+                <h3 className="text-[20px] font-extrabold text-[#1375E6] md:text-[25px] lg:text-[20px]">
                   {card.title}
                 </h3>
                 <p className="mt-2 text-base leading-6 text-[#4B5563] md:text-[17px]">

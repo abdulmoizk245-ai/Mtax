@@ -123,7 +123,7 @@ export default function Brand() {
       <div className="relative mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="mb-8 text-center md:mb-10">
-          <h2 className="text-2xl font-extrabold uppercase tracking-tight sm:text-3xl md:text-4xl">
+          <h2 className="text-[28px] font-extrabold uppercase tracking-tight md:text-4xl">
             <span className="text-[#328DF3]">Our</span>{" "}
             <span className="text-white">Trusted Brand</span>
           </h2>

@@ -235,7 +235,7 @@ export default function EnergyCapabilitiesOverview() {
             Our Capabilities
           </p>
 
-          <h2 className="mt-2 max-w-[330px] text-[23px] font-extrabold leading-[1.16] text-[#202B35] sm:text-[27px]">
+          <h2 className="mt-2 max-w-[330px] text-[26px] font-extrabold leading-[1.16] text-[#202B35] md:text-[32px] lg:text-[27px]">
             Reliable Power Support
             <br />
             for Demanding Operations
@@ -263,11 +263,11 @@ export default function EnergyCapabilitiesOverview() {
 
                 {/* Text */}
                 <div>
-                  <h3 className="text-[12px] font-bold leading-tight text-[#26323B] sm:text-[13px]">
+                  <h3 className="text-[20px] font-bold leading-tight text-[#26323B] md:text-[25px] lg:text-[13px]">
                     {capability.title}
                   </h3>
 
-                  <p className="mt-1 text-[9px] leading-[1.4] text-[#737B80] sm:text-[10px]">
+                  <p className="mt-1 text-[14px] leading-[1.4] text-[#737B80] md:text-[16px] lg:text-[10px]">
                     {capability.description}
                   </p>
                 </div>

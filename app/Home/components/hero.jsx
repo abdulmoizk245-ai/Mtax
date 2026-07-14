@@ -21,9 +21,9 @@ export default function Homehero() {
           </p>
 
           {/* MTAX Image */}
-          <div className="relative mb-3 h-[80px] w-[280px] md:h-[120px] md:w-[460px]">
+          <div className="relative mb-3 h-[80px] w-[280px] md:h-[120px] md:w-[460px] lg:h-[170px] lg:w-[600px]">
             <Image
-              src="/images/logo.png"
+              src="/images/brand6.png"
               alt="MTAX"
               fill
               priority
@@ -32,12 +32,12 @@ export default function Homehero() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="mb-5 text-[34px] font-extrabold uppercase leading-none tracking-tight md:text-[54px] lg:text-[62px]">
+          <h1 className="mb-5 text-[34px] font-extrabold uppercase leading-none tracking-tight md:text-[46px] lg:text-[62px]">
             Group of Companies
           </h1>
 
           <div className="mb-5 text-center">
-            <h2 className="text-[18px] font-semibold leading-tight text-white md:text-[22px]">
+            <h2 className="text-[26px] font-semibold leading-tight text-white md:text-[32px] lg:text-[22px]">
               Innovation, Quality, & Excellence
             </h2>
 
@@ -64,17 +64,17 @@ export default function Homehero() {
           </div>
 
           {/* Paragraph */}
-          <p className="mx-auto mb-8 max-w-3xl px-2 text-[15px] leading-relaxed text-white/90 sm:text-[17px] md:px-0 md:text-[20px]">
+          <p className="mx-auto mb-8 max-w-3xl px-2 text-[15px] leading-relaxed text-white/90 md:px-0 md:text-[18px] lg:text-[20px]">
             A diversified business group delivering reliable products,
             industrial solutions, and services across multiple industries in
             Pakistan and beyond.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-40">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-40">
             <a
               href="/group-of-companies"
-              className="rounded-[3px] px-6 py-3 text-[13px] font-semibold text-white shadow-md transition hover:opacity-90"
+              className="rounded-[3px] px-6 py-3 text-[13px] font-semibold text-white shadow-md transition hover:opacity-90 md:text-[15px] lg:text-[13px]"
               style={{
                 background: "linear-gradient(90deg, #1375E6 0%, #0B4180 100%)",
               }}
@@ -84,7 +84,7 @@ export default function Homehero() {
 
             <a
               href="/contact"
-              className="rounded-[3px] border border-white/80 px-6 py-3 text-[13px] font-semibold text-white transition hover:bg-white hover:text-[#0B4180]"
+              className="rounded-[3px] border border-white/80 px-6 py-3 text-[13px] font-semibold text-white transition hover:bg-white hover:text-[#0B4180] md:text-[15px] lg:text-[13px]"
             >
               Contact Us →
             </a>
@@ -92,56 +92,53 @@ export default function Homehero() {
         </div>
       </section>
       {/* about section */}
-      <section className="w-full bg-white py-14 md:py-60">
-        <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-10 px-4 md:ml-[30px] md:flex-row md:items-start md:px-0">
-          {/* Left Image */}
-          <div className="relative h-[280px] w-full max-w-[554px] shrink-0 sm:h-[340px] md:h-[402px] md:w-[554px]">
-            {/* Blue Border Behind Image */}
-            <div className="absolute inset-0 rotate-[0.26deg] bg-[#1375E6]"></div>
+<section className="w-full bg-white py-14 md:py-20 lg:py-60">
+  <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-10 px-4 md:ml-0 md:flex-row md:items-start md:px-6 lg:ml-[30px] lg:px-0">
+    
+    {/* Left Image */}
+    <div className="relative h-[280px] w-full max-w-[554px] shrink-0 sm:h-[340px] md:h-[402px] md:w-[554px]">
+      <div className="absolute inset-0 rotate-[0.26deg] bg-[#1375E6]" />
 
-            <div className="absolute inset-[4px] overflow-hidden bg-white">
-              <Image
-                src="/images/about-mtax.png"
-                alt="About MTAX Group"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-          </div>
+      <div className="absolute inset-[4px] overflow-hidden bg-white">
+        <Image
+          src="/images/about-mtax.png"
+          alt="About MTAX Group"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+    </div>
 
-          {/* Right Content */}
+    {/* Right Content */}
+    <div className="flex w-full max-w-[620px] flex-col items-start text-start md:ml-8 md:mt-8">
+      <div className="mb-6 bg-[#171d2c] px-4 py-2">
+        <h2 className="text-[30px] font-semibold uppercase leading-none text-white md:text-[32px] lg:text-[30px]">
+          About MTAX Group
+        </h2>
+      </div>
 
-            <div className="flex w-full max-w-[620px] flex-col items-start text-start md:mt-8 md:translate-x-[350px]">
-              <div className="mb-6 bg-[#171d2c] px-4 py-2">
-                <h2 className="text-[30px] font-semibold uppercase leading-none text-white">
-                  About MTAX Group
-                </h2>
-              </div>
+      <h3 className="mb-4 text-[24px] font-semibold uppercase leading-[1.35] text-[#171d2c] md:text-[27px]">
+        A Diversified{" "}
+        <span className="text-[#1375E6]">Business Group</span> Built On Trust
+        And Excellence
+      </h3>
 
-              <h3 className="mb-4 text-[27px] font-semibold uppercase leading-[1.35] text-[#171d2c]">
-                A Diversified{" "}
-                <span className="text-[#1375E6]">Business Group</span> Built On
-                Trust And Excellence
-              </h3>
+      <p className="mb-4 text-[16px] font-light leading-[1.6] text-[#171d2c]">
+        MTAX Group of Companies is a privately owned, multi-sector business
+        group based in Pakistan, serving different industries with quality
+        products, reliable solutions and professional services since 1994.
+      </p>
 
-              <p className="mb-4 text-[16px] font-light leading-[1.6] text-[#171d2c]">
-                MTAX Group of Companies is a privately owned, multi-sector
-                business group based in Pakistan, serving different industries
-                with quality products, reliable solutions and professional
-                services since 1994.
-              </p>
-
-              <p className="text-[16px] font-light leading-[1.6] text-[#171d2c]">
-                With a strong presence across industrial machinery, textiles,
-                solar energy, digital services, imports, exports and business
-                facilitation, MTAX continues to grow through trust, innovation
-                and long-term partnerships.
-              </p>
-            </div>
-          
-        </div>
-      </section>
+      <p className="text-[16px] font-light leading-[1.6] text-[#171d2c]">
+        With a strong presence across industrial machinery, textiles, solar
+        energy, digital services, imports, exports and business facilitation,
+        MTAX continues to grow through trust, innovation and long-term
+        partnerships.
+      </p>
+    </div>
+  </div>
+</section>
     </>
   );
 }

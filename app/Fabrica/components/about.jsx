@@ -12,7 +12,7 @@ export default function FabricaAbout() {
               About Fabrica
             </p>
 
-            <h2 className="mb-6 text-2xl font-extrabold uppercase leading-tight tracking-wide text-[#0b1a3b] md:text-3xl">
+            <h2 className="mb-6 text-[26px] font-extrabold uppercase leading-tight tracking-wide text-[#0b1a3b] md:text-[32px] lg:text-[30px]">
               Textile And Fabric Support Backed By Industry Experience
             </h2>
 

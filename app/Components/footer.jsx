@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
@@ -8,7 +10,7 @@ export default function Footer() {
           CONTACT <span className="text-[#1687FF]">US</span>
         </h2>
 
-        <div className="mt-[18px] space-y-[8px] text-[18px] font-normal leading-[1.4] text-white md:text-[22px]">
+        <div className="mt-[18px] space-y-[8px] text-[16px] font-normal leading-[1.4] text-white md:text-[18px] lg:text-[22px]">
           <p>021-35311837</p>
           <p>info@mtaxgroupofcompaniespakistan.com</p>
           <p>Plot 34-C, Street 3, Jami Commercial, Phase 7 DHA, Karachi</p>
@@ -23,15 +25,15 @@ export default function Footer() {
         <p>© {currentYear} MTAX Group of Companies. All Rights Reserved.</p>
 
         <div className="flex items-center gap-1">
-          <a href="#" className="transition hover:text-[#1687FF]">
+          <Link href="/privacy-policy" className="transition hover:text-[#1687FF]">
             Privacy Policy
-          </a>
+          </Link>
 
           <span>|</span>
 
-          <a href="#" className="transition hover:text-[#1687FF]">
+          <Link href="/terms-conditions" className="transition hover:text-[#1687FF]">
             Terms &amp; Conditions
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

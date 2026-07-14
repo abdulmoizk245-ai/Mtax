@@ -18,11 +18,11 @@ export default function GeneratorCTA() {
 
         {/* Right Content */}
         <div className="flex-1">
-          <h2 className="text-[14px] font-extrabold uppercase leading-[1.3] text-[#1C2738] sm:text-[16px]">
+          <h2 className="text-[26px] font-extrabold uppercase leading-[1.3] text-[#1C2738] md:text-[32px] lg:text-[16px]">
             Looking for Reliable Generator Supply for Your Business?
           </h2>
 
-          <p className="mt-2 max-w-[850px] text-[11px] leading-[1.55] text-[#57606D] sm:text-[13px]">
+          <p className="mt-2 max-w-[850px] text-[14px] leading-[1.55] text-[#57606D] md:text-[16px] lg:text-[13px]">
             Connect with DMN3 Group to explore high-performance generator
             solutions and professional support for commercial, industrial, and
             project-based power needs.

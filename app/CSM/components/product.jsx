@@ -125,11 +125,11 @@ export default function ProductRange() {
       <div className="mx-auto w-full max-w-[1320px]">
         {/* Heading */}
         <div className="mb-8 text-center">
-          <h2 className="text-[28px] font-extrabold uppercase leading-tight tracking-[0.01em] text-[#1A2438] sm:text-[32px] lg:text-[36px]">
+          <h2 className="text-[28px] font-extrabold uppercase leading-tight tracking-[0.01em] text-[#1A2438] md:text-[32px] lg:text-[36px]">
             Our Product Range
           </h2>
 
-          <p className="mt-2 text-[15px] font-medium text-[#1A2438] sm:text-[17px] lg:text-[19px]">
+          <p className="mt-2 text-[15px] font-medium text-[#1A2438] md:text-[17px] lg:text-[19px]">
             Essential Raw Materials for Modern Manufacturing
           </p>
         </div>
@@ -154,11 +154,11 @@ export default function ProductRange() {
 
               {/* Product Content */}
               <div className="flex flex-1 flex-col items-center px-4 pb-5 pt-3 text-center">
-                <h3 className="text-[27px] font-extrabold uppercase leading-tight text-[#1A2438]">
+                <h3 className="text-[24px] font-extrabold uppercase leading-tight text-[#1A2438] md:text-[27px]">
                   {product.name}
                 </h3>
 
-                <p className="mt-2 max-w-[250px] text-[12px] leading-[1.45] text-[#303849] sm:text-[13px]">
+                <p className="mt-2 max-w-[250px] text-[14px] leading-[1.45] text-[#303849] md:text-[16px] lg:text-[13px]">
                   {product.description}
                 </p>
               </div>
@@ -167,7 +167,7 @@ export default function ProductRange() {
         </div>
 
         {/* Bottom Description */}
-        <p className="mx-auto mt-9 max-w-[850px] text-center text-[15px] leading-[1.5] text-[#1A2438] sm:text-[17px]">
+        <p className="mx-auto mt-9 max-w-[850px] text-center text-[15px] leading-[1.5] text-[#1A2438] md:text-[17px]">
           CSM provides chemical products used across detergent, cleaning and
           industrial manufacturing applications.
         </p>

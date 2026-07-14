@@ -33,7 +33,7 @@ export default function YuemeiBanner() {
 
           {/* Center Content */}
           <div className="flex h-full flex-col justify-center px-7 py-9 md:px-8 lg:px-10">
-            <h2 className="max-w-[520px] text-[27px] font-bold leading-[1.35] text-white md:text-[30px] lg:text-[32px]">
+            <h2 className="max-w-[520px] text-[27px] font-bold leading-[1.35] text-white md:text-[32px] lg:text-[32px]">
               Upgrade Your Embroidery
               <br />
               Production with Yuemei
@@ -50,7 +50,7 @@ export default function YuemeiBanner() {
           <div className="flex items-center px-7 pb-9 md:px-8 md:pb-0 lg:pr-12">
             <Link
               href="/contact"
-              className="flex min-h-[62px] min-w-[228px] items-center justify-center gap-5 rounded-[9px] bg-[#145BE8] px-7 text-[16px] font-semibold text-white shadow-[0_10px_25px_rgba(0,0,0,0.25)] transition duration-300 hover:bg-[#0F4FD3]"
+              className="flex min-h-[62px] min-w-[228px] items-center justify-center gap-5 rounded-[9px] bg-[#145BE8] px-7 text-[15px] font-semibold text-white shadow-[0_10px_25px_rgba(0,0,0,0.25)] transition duration-300 hover:bg-[#0F4FD3] md:text-[16px]"
             >
               <span>Contact MTAX Group</span>
               <span className="text-[27px] font-light leading-none">→</span>

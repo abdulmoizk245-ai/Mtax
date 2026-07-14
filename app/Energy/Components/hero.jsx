@@ -104,12 +104,12 @@ export default function EnergyHero() {
       <div className="relative z-30 mx-auto w-full  px-6 py-16 sm:px-9 md:px-12 lg:px-14">
         <div className="max-w-[555px]">
           {/* Main Heading */}
-          <h1 className="text-[35px] font-extrabold uppercase leading-none tracking-[-0.02em] text-white sm:text-[43px] lg:text-[47px]">
+          <h1 className="text-[35px] font-extrabold uppercase leading-none tracking-[-0.02em] text-white md:text-[43px] lg:text-[47px]">
             De Novo <span className="text-[#28D947]">Energy</span>
           </h1>
 
           {/* Subtitle */}
-          <h2 className="mt-5 max-w-[520px] text-[15px] font-extrabold uppercase leading-[1.45] text-white sm:text-[17px] lg:text-[18px]">
+          <h2 className="mt-5 max-w-[520px] text-[26px] font-extrabold uppercase leading-[1.45] text-white md:text-[32px] lg:text-[18px]">
             Reliable Generator Supply for
             <br className="hidden sm:block" />{" "}
             <span className="text-[#28D947]">Commercial</span> and Industrial
@@ -117,7 +117,7 @@ export default function EnergyHero() {
           </h2>
 
           {/* Description */}
-          <p className="mt-5 max-w-[510px] text-[12px] leading-[1.65] text-white/75 sm:text-[13px] lg:text-[14px]">
+          <p className="mt-5 max-w-[510px] text-[14px] leading-[1.65] text-white/75 md:text-[16px] lg:text-[14px]">
             De Novo, under MTAX Group of Companies, is connected with industrial
             generator supply support, offering dependable power solutions for
             commercial, industrial and project-based requirements. From backup
@@ -128,7 +128,7 @@ export default function EnergyHero() {
           {/* CTA */}
           <Link
             href="#power-solutions"
-            className="mt-8 inline-flex items-center gap-2 rounded-[3px] bg-[#2BD94C] px-5 py-3 text-[12px] font-semibold text-white shadow-[0_8px_24px_rgba(43,217,76,0.22)] transition duration-300 hover:bg-[#23C941] sm:text-[13px]"
+            className="mt-8 inline-flex items-center gap-2 rounded-[3px] bg-[#2BD94C] px-5 py-3 text-[13px] font-semibold text-white shadow-[0_8px_24px_rgba(43,217,76,0.22)] transition duration-300 hover:bg-[#23C941] md:text-[14px] lg:text-[13px]"
           >
             <span>Explore Power Solutions</span>
             <FaArrowRight className="text-[10px]" aria-hidden="true" />

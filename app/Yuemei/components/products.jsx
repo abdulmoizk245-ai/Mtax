@@ -136,11 +136,11 @@ export default function ProductRange() {
       <div className="mx-auto w-full max-w-[1440px]">
         {/* Heading */}
         <div className="mb-10 text-center md:mb-12">
-          <h2 className="text-[30px] font-extrabold uppercase tracking-[0.02em] text-[#1C263A] sm:text-[36px] md:text-[42px]">
+          <h2 className="text-[30px] font-extrabold uppercase tracking-[0.02em] text-[#1C263A] md:text-[36px] lg:text-[42px]">
             Product Range
           </h2>
 
-          <p className="mt-2 text-[16px] font-normal text-[#1C263A] sm:text-[18px] md:text-[21px]">
+          <p className="mt-2 text-[16px] font-normal text-[#1C263A] md:text-[18px] lg:text-[21px]">
             Complete Embroidery Solutions for Professional Production
           </p>
         </div>
@@ -168,13 +168,13 @@ export default function ProductRange() {
                 {/* Title */}
                 <Link
                   href={product.href}
-                  className="mb-3 text-[19px] font-bold leading-[1.25] text-[#173D8F] transition-colors hover:text-[#1375E6]"
+                  className="mb-3 text-[20px] font-bold leading-[1.25] text-[#173D8F] transition-colors hover:text-[#1375E6] md:text-[25px] lg:text-[19px]"
                 >
                   {product.title}
                 </Link>
 
                 {/* Description */}
-                <p className="text-[15px] leading-[1.7] text-[#414141]">
+                <p className="text-[15px] leading-[1.7] text-[#414141] md:text-[16px] lg:text-[15px]">
                   {product.description}
                 </p>
 

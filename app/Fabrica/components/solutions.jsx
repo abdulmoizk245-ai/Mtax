@@ -76,11 +76,11 @@ export default function FabricaSolutions() {
 
                 {/* Text */}
                 <div className="max-w-[500px]">
-                  <h3 className="text-[18px] font-bold leading-tight text-[#2990FF] sm:text-[20px]">
+                  <h3 className="text-[20px] font-bold leading-tight text-[#2990FF] md:text-[25px] lg:text-[20px]">
                     {title}
                   </h3>
 
-                  <p className="mt-2 text-[18px] leading-[1.45] text-white/95 sm:text-[20px] lg:text-[22px]">
+                  <p className="mt-2 text-[16px] leading-[1.45] text-white/95 md:text-[18px] lg:text-[22px]">
                     {description}
                   </p>
                 </div>

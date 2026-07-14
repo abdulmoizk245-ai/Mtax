@@ -73,7 +73,7 @@ export default function Energy() {
               Power Range
             </p>
 
-            <h2 className="mt-2 text-[25px] font-bold leading-[1.08] tracking-[-0.02em] text-white sm:text-[28px]">
+            <h2 className="mt-2 text-[26px] font-bold leading-[1.08] tracking-[-0.02em] text-white md:text-[32px] lg:text-[28px]">
               Generator Capacity
               <br />
               5kW to 1000kW
@@ -120,7 +120,7 @@ export default function Energy() {
             Our Solutions
           </p>
 
-          <h3 className="mt-1 text-[18px] font-normal leading-tight text-white sm:text-[21px]">
+          <h3 className="mt-1 text-[20px] font-normal leading-tight text-white md:text-[25px] lg:text-[21px]">
             Power Solutions for Industrial &amp; Commercial Needs
           </h3>
         </div>
