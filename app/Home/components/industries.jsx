@@ -1,30 +1,4 @@
-// import Image from "next/image";
 
-// export default function IndustriesSection() {
-//   return (
-//     <section className="w-full overflow-hidden bg-[#040D23]">
-//       {/* Heading */}
-//       <div className="py-8 md:py-10">
-//         <h2 className="text-2xl font-extrabold uppercase tracking-tight text-white sm:text-3xl md:text-4xl">
-//           Industries We{" "}
-//           <span className="text-[#0D8CFF]">Serve</span>
-//         </h2>
-//       </div>
-// {/* Full Width Image */}
-// <div className="w-full">
-//   <Image
-//     src="/images/industries.png"
-//     alt="Industries We Serve"
-//     width={1451}
-//     height={0}
-//     priority
-//     sizes="100vw"
-//     className="block h-686 w-full"
-//   />
-// </div>
-//     </section>
-//   );
-// }
 
 import Image from "next/image";
 

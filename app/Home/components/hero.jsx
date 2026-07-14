@@ -92,53 +92,53 @@ export default function Homehero() {
         </div>
       </section>
       {/* about section */}
-<section className="w-full bg-white py-14 md:py-20 lg:py-60">
-  <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-10 px-4 md:ml-0 md:flex-row md:items-start md:px-6 lg:ml-[30px] lg:px-0">
-    
-    {/* Left Image */}
-    <div className="relative h-[280px] w-full max-w-[554px] shrink-0 sm:h-[340px] md:h-[402px] md:w-[554px]">
-      <div className="absolute inset-0 rotate-[0.26deg] bg-[#1375E6]" />
+      <section className="w-full bg-white py-8 md:py-12 lg:py-16">
+        <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-10 px-4 md:ml-0 md:flex-row md:items-start md:px-6 lg:ml-[30px] lg:px-0">
+          {/* Left Image */}
+          <div className="relative h-[280px] w-full max-w-[554px] shrink-0 sm:h-[340px] md:h-[402px] md:w-[554px]">
+            <div className="absolute inset-0 rotate-[0.26deg] bg-[#1375E6]" />
 
-      <div className="absolute inset-[4px] overflow-hidden bg-white">
-        <Image
-          src="/images/about-mtax.png"
-          alt="About MTAX Group"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
-    </div>
+            <div className="absolute inset-[4px] overflow-hidden bg-white">
+              <Image
+                src="/images/about-mtax.png"
+                alt="About MTAX Group"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
 
-    {/* Right Content */}
-    <div className="flex w-full max-w-[620px] flex-col items-start text-start md:ml-8 md:mt-8">
-      <div className="mb-6 bg-[#171d2c] px-4 py-2">
-        <h2 className="text-[30px] font-semibold uppercase leading-none text-white md:text-[32px] lg:text-[30px]">
-          About MTAX Group
-        </h2>
-      </div>
+          {/* Right Content */}
+          <div className="flex w-full max-w-[620px] flex-col items-start text-start md:ml-8 md:mt-8">
+            <div className="mb-6 bg-[#171d2c] px-4 py-2">
+              <h2 className="text-[30px] font-semibold uppercase leading-none text-white md:text-[32px] lg:text-[30px]">
+                About MTAX Group
+              </h2>
+            </div>
 
-      <h3 className="mb-4 text-[24px] font-semibold uppercase leading-[1.35] text-[#171d2c] md:text-[27px]">
-        A Diversified{" "}
-        <span className="text-[#1375E6]">Business Group</span> Built On Trust
-        And Excellence
-      </h3>
+            <h3 className="mb-4 text-[24px] font-semibold uppercase leading-[1.35] text-[#171d2c] md:text-[27px]">
+              A Diversified{" "}
+              <span className="text-[#1375E6]">Business Group</span> Built On
+              Trust And Excellence
+            </h3>
 
-      <p className="mb-4 text-[16px] font-light leading-[1.6] text-[#171d2c]">
-        MTAX Group of Companies is a privately owned, multi-sector business
-        group based in Pakistan, serving different industries with quality
-        products, reliable solutions and professional services since 1994.
-      </p>
+            <p className="mb-4 text-[16px] font-light leading-[1.6] text-[#171d2c]">
+              MTAX Group of Companies is a privately owned, multi-sector
+              business group based in Pakistan, serving different industries
+              with quality products, reliable solutions and professional
+              services since 1994.
+            </p>
 
-      <p className="text-[16px] font-light leading-[1.6] text-[#171d2c]">
-        With a strong presence across industrial machinery, textiles, solar
-        energy, digital services, imports, exports and business facilitation,
-        MTAX continues to grow through trust, innovation and long-term
-        partnerships.
-      </p>
-    </div>
-  </div>
-</section>
+            <p className="text-[16px] font-light leading-[1.6] text-[#171d2c]">
+              With a strong presence across industrial machinery, textiles,
+              solar energy, digital services, imports, exports and business
+              facilitation, MTAX continues to grow through trust, innovation and
+              long-term partnerships.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
