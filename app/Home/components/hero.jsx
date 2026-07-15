@@ -11,7 +11,7 @@ export default function Homehero() {
         }}
       >
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/45"></div>
+        {/* <div className="absolute inset-0 bg-black/45"></div> */}
 
         {/* Content */}
         <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center justify-center px-5 text-center text-white">
@@ -73,7 +73,7 @@ export default function Homehero() {
           {/* Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-40">
             <a
-              href="/group-of-companies"
+              href="/contact"
               className="rounded-[3px] px-6 py-3 text-[13px] font-semibold text-white shadow-md transition hover:opacity-90 md:text-[15px] lg:text-[13px]"
               style={{
                 background: "linear-gradient(90deg, #1375E6 0%, #0B4180 100%)",

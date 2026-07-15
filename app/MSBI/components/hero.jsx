@@ -73,7 +73,7 @@ export default function MSBIHero() {
         </div>
 
         <Link
-          href="/MSBI/products"
+          href="/contact"
           className="inline-flex items-center gap-2 rounded-md bg-[#1375E6] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#0f5dbf]"
         >
           Explore Power Solutions <span aria-hidden>→</span>

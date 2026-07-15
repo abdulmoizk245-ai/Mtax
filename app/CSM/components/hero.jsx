@@ -42,7 +42,7 @@ export default function CSMHero() {
         {/* Buttons */}
         <div className="flex flex-wrap items-center gap-4 ">
           <Link
-            href="/CSM/products"
+            href="/contact"
             className="flex items-center gap-3 rounded-md bg-[#1687FF] px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#0872DC]"
           >
             <span>Explore Products</span>

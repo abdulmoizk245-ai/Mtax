@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 
 const industries = [
@@ -17,7 +15,12 @@ export default function IndustriesSection() {
   return (
     <section className="w-full overflow-hidden bg-[#040D23]">
       {/* Heading */}
-      <div className="pb-2 pt-6 md:pb-3 md:pt-8">
+      {/* <div className="pb-2 pt-6 md:pb-3 md:pt-8">
+        <h2 className="mx-auto w-full max-w-[1750px] text-[28px] font-extrabold uppercase tracking-tight text-white md:text-4xl">
+          Industries We <span className="text-[#0D8CFF]">Serve</span>
+        </h2>
+      </div> */}
+      <div className="pb-2 pt-6 text-center md:pb-3 md:pt-8">
         <h2 className="mx-auto w-full max-w-[1750px] text-[28px] font-extrabold uppercase tracking-tight text-white md:text-4xl">
           Industries We <span className="text-[#0D8CFF]">Serve</span>
         </h2>

@@ -70,11 +70,11 @@ export default function ShamoozProductRange() {
 
               {/* Card Content */}
               <div className="min-h-[120px] px-4 pb-5 pt-9">
-                <h3 className="text-[20px] font-bold uppercase leading-tight text-white md:text-[25px] lg:text-[13px]">
+                <h3 className="text-[20px] font-bold uppercase leading-tight text-white md:text-[25px] lg:text-[17px]">
                   {product.title}
                 </h3>
 
-                <p className="mt-3 max-w-[310px] text-[14px] leading-[1.55] text-white/70 md:text-[16px] lg:text-[11px]">
+                <p className="mt-3 max-w-[310px] text-[14px] leading-[1.55] text-white/70 md:text-[16px] lg:text-[15px]">
                   {product.description}
                 </p>
               </div>

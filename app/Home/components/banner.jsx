@@ -1,89 +1,17 @@
 
-
-
-// import Image from "next/image";
-
-// export default function Banner() {
-//   const companies = [
-//     "YUEMEI",
-//     "CSM",
-//     "MSBI",
-//     "BLAZE",
-//     "FABRICA",
-//     "DE NOVO",
-//     "UNIVERSAL EXPORTS",
-//   ];
-
-//   return (
-//     <section className="w-full bg-white pt-[12px] text-center lg:pt-[18px]">
-//       {/* Logo */}
-//       <div className="mx-auto w-full max-w-[210px] px-3 sm:max-w-[270px] lg:max-w-[360px]">
-//         <Image
-//           src="/images/MT BLACK LOGO.png"
-//           alt="MTAX Group of Companies"
-//           width={1000}
-//           height={475}
-//           priority
-//           quality={100}
-//           sizes="(max-width: 640px) 210px, (max-width: 1024px) 270px, 360px"
-//           className="block h-auto w-full object-contain"
-//         />
-//       </div>
-
-//       {/* Description */}
-//       <p className="mx-auto mt-2 w-full px-4 text-center text-[15px] leading-[1.5] text-[#1B2436]/85 md:text-[17px] lg:mt-3 lg:text-[20px] lg:whitespace-nowrap">
-//         MTAX Group of Companies is a privately owned, multi-brand enterprise
-//         based in Pakistan, delivering innovation, quality, and excellence across
-//         diverse industries.
-//       </p>
-
-//       {/* Navigation */}
-// <div
-//   className="
-//     mt-3 flex w-full items-center gap-x-[14px]
-//     overflow-x-auto px-4 pb-3
-//     [scrollbar-width:none]
-//     [&::-webkit-scrollbar]:hidden
-//     md:gap-x-[22px]
-//     lg:mt-[18px] lg:w-full lg:flex-nowrap lg:justify-center
-//     lg:gap-x-[30px] lg:overflow-visible lg:px-8 lg:pb-[18px]
-//   "
-// >
-//         {companies.map((item, index) => (
-//           <button
-//             key={`${item}-${index}`}
-//             type="button"
-//             className={`shrink-0 whitespace-nowrap text-[13px] font-medium uppercase tracking-[0.01em] transition-colors md:text-[15px] lg:text-[30px] lg:tracking-[0.02em] ${
-//               index === 0 ||
-//               item === "MSBI" ||
-//               item === "FABRICA" ||
-//               item === "UNIVERSAL EXPORTS"
-//                 ? "text-[#1687FF]"
-//                 : "text-[#111827]"
-//             }`}
-//           >
-//             {item}
-//           </button>
-//         ))}
-//       </div>
-
-//       {/* Bottom Line */}
-//       <div className="h-[3px] w-full bg-[#040D23]" />
-//     </section>
-//   );
-// }
-
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Banner() {
   const companies = [
-    "YUEMEI",
-    "CSM",
-    "MSBI",
-    "BLAZE",
-    "FABRICA",
-    "DE NOVO",
-    "UNIVERSAL EXPORTS",
+    { name: "YUEMEI", href: "/Yuemei" },
+    { name: "CSM", href: "/CSM" },
+    { name: "MSBI", href: "/MSBI" },
+    { name: "BLAZE", href: "/Blaze" },
+    { name: "FABRICA", href: "/Fabrica" },
+    { name: "DE NOVO", href: "/Energy" },
+    { name: "UNIVERSAL EXPORTS", href: "/Universal-exports" },
+    { name: "Shamooz", href: "/Shamooz" },
   ];
 
   return (
@@ -110,37 +38,37 @@ export default function Banner() {
       </p>
 
       {/* Navigation */}
-      <div
-        className="
-          mt-3 flex w-full items-center gap-x-[14px]
-          overflow-x-auto px-4 pb-3
-          [scrollbar-width:none]
-          [&::-webkit-scrollbar]:hidden
+<div
+  className="
+    mt-3 flex w-full flex-nowrap items-center justify-between
+    gap-x-[4px] overflow-hidden px-2 pb-3
 
-          md:flex-nowrap md:justify-center md:gap-x-[18px]
-          md:overflow-visible md:px-5 md:pb-4
+    sm:gap-x-[7px] sm:px-3
 
-          lg:mt-[18px] lg:w-full lg:flex-nowrap lg:justify-center
-          lg:gap-x-[30px] lg:overflow-visible lg:px-8 lg:pb-[18px]
-        "
-      >
-        {companies.map((item, index) => (
-          <button
-            key={`${item}-${index}`}
-            type="button"
-            className={`shrink-0 whitespace-nowrap text-[13px] font-medium uppercase tracking-[0.01em] transition-colors md:text-[14px] lg:text-[30px] lg:tracking-[0.02em] ${
-              index === 0 ||
-              item === "MSBI" ||
-              item === "FABRICA" ||
-              item === "UNIVERSAL EXPORTS"
-                ? "text-[#1687FF]"
-                : "text-[#111827]"
-            }`}
-          >
-            {item}
-          </button>
-        ))}
-      </div>
+    md:justify-center md:gap-x-[18px]
+    md:overflow-visible md:px-5 md:pb-4
+
+    lg:mt-[18px] lg:w-full lg:flex-nowrap lg:justify-center
+    lg:gap-x-[30px] lg:px-8 lg:pb-[18px]
+  "
+>
+  {companies.map((item, index) => (
+    <Link
+      key={`${item.name}-${index}`}
+      href={item.href}
+      className={`shrink-0 whitespace-nowrap text-[clamp(6px,2.1vw,10px)] font-medium uppercase tracking-normal transition-colors md:text-[14px] md:tracking-[0.01em] lg:text-[30px] lg:tracking-[0.02em] ${
+        index === 0 ||
+        item.name === "MSBI" ||
+        item.name === "FABRICA" ||
+        item.name === "UNIVERSAL EXPORTS"
+          ? "text-[#1687FF]"
+          : "text-[#111827]"
+      }`}
+    >
+      {item.name}
+    </Link>
+  ))}
+</div>
 
       {/* Bottom Line */}
       <div className="h-[3px] w-full bg-[#040D23]" />

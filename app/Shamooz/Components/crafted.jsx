@@ -35,7 +35,7 @@ export default function CraftedElegance() {
             Modern <span className="text-[#1687FF]">Elegance</span>
           </h2>
 
-          <p className="mt-4 max-w-[430px] text-[14px] leading-[1.55] text-[#626B78] md:text-[16px] lg:text-[13px]">
+          <p className="mt-4 max-w-[430px] text-[14px] leading-[1.55] text-[#626B78] md:text-[16px] lg:text-[18px]">
             Explore our latest collections that embody feminine grace, refined
             details, and timeless beauty—designed to make every moment
             extraordinary.

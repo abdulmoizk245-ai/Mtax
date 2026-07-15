@@ -6,7 +6,7 @@ const products = [
     title: "Tire Imports",
     description:
       "Premium passenger tires for sedans, SUVs, and light commercial vehicles.",
-    image: "/msbi/product.png",
+    image: "/msbi/product2.png",
     icon: "/msbi/icon.png",
   },
   {

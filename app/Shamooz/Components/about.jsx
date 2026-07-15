@@ -23,6 +23,7 @@ const collectionPoints = [
   },
 ];
 
+
 export default function AboutShamooz() {
   return (
     <section className="w-full border-t-[3px] border-[#1D2635] bg-white px-5 py-10 sm:px-7 md:px-10 lg:px-12">
@@ -42,7 +43,7 @@ export default function AboutShamooz() {
         {/* Right Content */}
         <div className="flex flex-col justify-center">
           {/* Small Heading */}
-          <p className="text-[11px] font-extrabold uppercase tracking-[0.02em] text-[#1C2738] sm:text-[12px]">
+          <p className="text-[11px] font-extrabold uppercase tracking-[0.02em] text-[#1C2738] sm:text-[12px] lg:text-[40px]">
             About Shamooz
           </p>
 
@@ -52,7 +53,7 @@ export default function AboutShamooz() {
           </h2>
 
           {/* Description */}
-          <p className="mt-3 max-w-[760px] text-[14px] leading-[1.55] text-[#596273] md:text-[16px] lg:text-[13px]">
+          <p className="mt-3 max-w-[760px] text-[14px] leading-[1.55] text-[#596273] md:text-[16px] lg:text-[17px]">
             Shamooz celebrates the beauty of tradition with a modern fashion
             identity. Each outfit is thoughtfully created to offer distinctive
             looks using fine fabrics, intricate detailing, and thoughtful
@@ -70,11 +71,11 @@ export default function AboutShamooz() {
 
                 {/* Feature Text */}
                 <div>
-                  <h3 className="text-[20px] font-bold leading-tight text-[#176FE5] md:text-[25px] lg:text-[11px]">
+                  <h3 className="text-[20px] font-bold leading-tight text-[#176FE5] md:text-[25px] lg:text-[19px]">
                     {item.title}
                   </h3>
 
-                  <p className="mt-[2px] text-[14px] leading-[1.4] text-[#667080] md:text-[16px] lg:text-[10px]">
+                  <p className="mt-[2px] text-[14px] leading-[1.4] text-[#667080] md:text-[16px] lg:text-[17px]">
                     {item.description}
                   </p>
                 </div>

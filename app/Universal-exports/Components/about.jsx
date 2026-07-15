@@ -33,7 +33,7 @@ export default function AboutUniversalExports() {
 
         {/* Right Content */}
         <div className="lg:pl-2">
-          <p className="text-[13px] font-extrabold uppercase tracking-[0.01em] text-[#1D293D] sm:text-[14px]">
+          <p className="text-[13px] font-extrabold uppercase tracking-[0.01em] text-[#1D293D] sm:text-[14px] lg:text-[20px]">
             About Universal Exports
           </p>
 

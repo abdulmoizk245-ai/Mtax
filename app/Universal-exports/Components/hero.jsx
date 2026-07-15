@@ -50,7 +50,7 @@ export default function UniversalExportsHero() {
 
           {/* Button */}
           <Link
-            href="#crepe-fabrics"
+            href="/contact"
             className="mt-8 inline-flex items-center gap-2 rounded-[3px] bg-[#2587E8] px-5 py-3 text-[13px] font-semibold text-white shadow-[0_8px_22px_rgba(37,135,232,0.25)] transition duration-300 hover:bg-[#1674D3] md:text-[14px] lg:text-[12px]"
           >
             <span>Explore Crepe Fabrics</span>

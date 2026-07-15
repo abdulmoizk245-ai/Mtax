@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaChevronDown } from "react-icons/fa";
 
 const companies = [
   { name: "Blaze Group", href: "/Blaze" },
@@ -19,41 +20,59 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [companiesOpen, setCompaniesOpen] = useState(false);
   const [mobileCompaniesOpen, setMobileCompaniesOpen] = useState(false);
+
   const dropdownRef = useRef(null);
   const closeTimeoutRef = useRef(null);
 
   const openCompanies = () => {
-    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+    }
+
     setCompaniesOpen(true);
   };
 
   const scheduleCloseCompanies = () => {
-    closeTimeoutRef.current = setTimeout(() => setCompaniesOpen(false), 3000);
+    closeTimeoutRef.current = setTimeout(() => {
+      setCompaniesOpen(false);
+    }, 3000);
   };
 
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+        if (closeTimeoutRef.current) {
+          clearTimeout(closeTimeoutRef.current);
+        }
+
         setCompaniesOpen(false);
       }
     }
+
     document.addEventListener("mousedown", handleClickOutside);
+
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
-      if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+
+      if (closeTimeoutRef.current) {
+        clearTimeout(closeTimeoutRef.current);
+      }
     };
   }, []);
 
   return (
     <header className="w-full bg-white">
-      {/* Top dark line */}
-      <div className="h-[4px] w-full bg-[#171d2c]" />
+      {/* Top Dark Line */}
+      {/* <div className="h-[4px] w-full bg-[#171d2c]" /> */}
 
       {/* Main Header */}
       <div className="mx-auto grid grid-cols-[auto_1fr] items-center px-4 py-3 sm:px-6 sm:py-4 md:grid-cols-[1fr_auto_1fr]">
-        {/* Logo - Left */}
-        <Link href="/" className="justify-self-start" onClick={() => setMenuOpen(false)}>
+        {/* Logo */}
+        <Link
+          href="/"
+          className="justify-self-start"
+          onClick={() => setMenuOpen(false)}
+        >
           <Image
             src="/images/logo.png"
             alt="MTAX Logo"
@@ -64,7 +83,7 @@ export default function Header() {
           />
         </Link>
 
-        {/* Navigation - Center */}
+        {/* Desktop Navigation */}
         <nav className="hidden items-center justify-center gap-6 md:flex">
           <Link
             href="/"
@@ -73,7 +92,7 @@ export default function Header() {
             Home
           </Link>
 
-          {/* Group of Companies dropdown */}
+          {/* Group of Companies Dropdown */}
           <div
             ref={dropdownRef}
             className="relative"
@@ -85,18 +104,21 @@ export default function Header() {
               aria-expanded={companiesOpen}
               aria-haspopup="true"
               onClick={() => {
-                if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+                if (closeTimeoutRef.current) {
+                  clearTimeout(closeTimeoutRef.current);
+                }
+
                 setCompaniesOpen((open) => !open);
               }}
-              className="flex items-center gap-1 text-sm font-medium text-gray-800 transition-colors hover:text-blue-600"
+              className="flex items-center gap-2 text-sm font-medium text-gray-800 transition-colors hover:text-blue-600"
             >
               Group of Companies
-              <span
-                className={`text-xs transition-transform ${companiesOpen ? "rotate-180" : ""}`}
-                aria-hidden
-              >
-                ▾
-              </span>
+              <FaChevronDown
+                aria-hidden="true"
+                className={`text-[10px] transition-transform duration-300 ${
+                  companiesOpen ? "rotate-180" : "rotate-0"
+                }`}
+              />
             </button>
 
             {companiesOpen && (
@@ -123,12 +145,26 @@ export default function Header() {
           </Link>
         </nav>
 
-        {/* Phone Number - Right */}
-        <a
+        {/* Phone Number */}
+        {/* <a
           href="tel:02135311837"
           className="hidden items-center gap-2 justify-self-end rounded-md border border-gray-700 px-3 py-1.5 text-sm text-gray-800 transition-colors hover:bg-gray-100 md:flex"
         >
           <span>☎</span>
+          <span>021-35311837</span>
+        </a> */}
+        <a
+          href="tel:02135311837"
+          className="hidden items-center gap-2 justify-self-end rounded-md border border-gray-700 px-3 py-1.5 text-sm text-gray-800 transition-colors hover:bg-gray-100 md:flex"
+        >
+          <Image
+            src="/phone.svg"
+            alt="Telephone"
+            width={18}
+            height={18}
+            className="h-[18px] w-[18px] object-contain"
+          />
+
           <span>021-35311837</span>
         </a>
 
@@ -138,13 +174,13 @@ export default function Header() {
           aria-expanded={menuOpen}
           aria-controls="mobile-nav"
           onClick={() => setMenuOpen((open) => !open)}
-          className="justify-self-end rounded-md border border-gray-300 px-3 py-2 text-sm md:hidden"
+          className="justify-self-end rounded-md border border-gray-300 px-3 py-2 text-sm font-medium text-[#111827] md:hidden"
         >
           {menuOpen ? "Close" : "Menu"}
         </button>
       </div>
 
-      {/* Mobile Nav Panel */}
+      {/* Mobile Navigation */}
       <div
         id="mobile-nav"
         className={`overflow-hidden border-t border-gray-200 transition-[max-height] duration-300 ease-in-out md:hidden ${
@@ -160,20 +196,22 @@ export default function Header() {
             Home
           </Link>
 
-          {/* Group of Companies accordion */}
+          {/* Mobile Companies Accordion */}
           <button
             type="button"
             aria-expanded={mobileCompaniesOpen}
-            onClick={() => setMobileCompaniesOpen((open) => !open)}
+            onClick={() => {
+              setMobileCompaniesOpen((open) => !open);
+            }}
             className="flex items-center justify-between rounded-md px-3 py-2 text-sm font-medium text-gray-800 transition-colors hover:bg-gray-100 hover:text-blue-600"
           >
             Group of Companies
-            <span
-              className={`text-xs transition-transform ${mobileCompaniesOpen ? "rotate-180" : ""}`}
-              aria-hidden
-            >
-              ▾
-            </span>
+            <FaChevronDown
+              aria-hidden="true"
+              className={`text-[10px] transition-transform duration-300 ${
+                mobileCompaniesOpen ? "rotate-180" : "rotate-0"
+              }`}
+            />
           </button>
 
           <div
@@ -204,11 +242,25 @@ export default function Header() {
             Contact Us
           </Link>
 
-          <a
+          {/* <a
             href="tel:02135311837"
             className="mt-1 flex items-center gap-2 rounded-md border border-gray-700 px-3 py-2 text-sm text-gray-800 transition-colors hover:bg-gray-100"
           >
             <span>☎</span>
+            <span>021-35311837</span>
+          </a> */}
+          <a
+            href="tel:02135311837"
+            className="hidden items-center gap-2 justify-self-end rounded-md border border-gray-700 px-3 py-1.5 text-sm text-gray-800 transition-colors hover:bg-gray-100 md:flex"
+          >
+            <Image
+              src="/phone.svg"
+              alt="Telephone"
+              width={18}
+              height={18}
+              className="h-[18px] w-[18px] object-contain"
+            />
+
             <span>021-35311837</span>
           </a>
         </nav>
