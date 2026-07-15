@@ -11,7 +11,6 @@ export default function HeroSection() {
         alt="Yuemei Embroidery Machine"
         fill
         priority
-        
         className="object-cover "
       />
 
@@ -30,7 +29,9 @@ export default function HeroSection() {
           </p>
 
           <h2 className="mt-8 text-3xl font-bold uppercase leading-snug md:text-4xl">
-            Advanced <span className="text-[#2563EB]"> Embroidery Technology </span>  <br />
+            Advanced{" "}
+            <span className="text-[#2563EB]"> Embroidery Technology </span>{" "}
+            <br />
             for Modern Textile Production
           </h2>
 
@@ -43,11 +44,10 @@ export default function HeroSection() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-             <Link
-              href="/contact">
-            <button className="rounded bg-gradient-to-r from-[#1375E6] to-[#0B4180] px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:scale-105">
-              Explore Our Companies
-            </button>
+            <Link href="/contact">
+              <button className="rounded bg-gradient-to-r from-[#1375E6] to-[#0B4180] px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:scale-105">
+                Explore Our Companies
+              </button>
             </Link>
 
             <Link
