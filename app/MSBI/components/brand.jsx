@@ -3,51 +3,46 @@ import Image from "next/image";
 const brands = [
   {
     name: "Roadone",
-    logo: "/msbi/brands/roadone.png",
+    logo: "/msbi/roadone.png",
   },
   {
     name: "Linglong Tire",
-    logo: "/msbi/brands/linglong.png",
+    logo: "/msbi/linglong.png",
   },
   {
     name: "CEAT",
-    logo: "/msbi/brands/ceat.png",
+    logo: "/msbi/ceat.png",
   },
   {
     name: "Goldway",
-    logo: "/msbi/brands/goldway.png",
+    logo: "/msbi/goldway.png",
   },
 ];
 
 const benefits = [
   {
     title: "Premium Quality",
-    description:
-      "Premium raw materials produce long-lasting global brands.",
+    description: "Premium raw materials produce long-lasting global brands.",
     icon: "/msbi/icons/premium-quality.png",
   },
   {
     title: "Global Network",
-    description:
-      "Our strong network with leading suppliers worldwide.",
+    description: "Our strong network with leading suppliers worldwide.",
     icon: "/msbi/icons/global-network.png",
   },
   {
     title: "Customer Focused",
-    description:
-      "We deliver customized solutions with 100% reliability.",
+    description: "We deliver customized solutions with 100% reliability.",
     icon: "/msbi/icons/customer-focused.png",
   },
   {
     title: "Timely Delivery",
-    description:
-      "On-time production and fast worldwide logistics.",
+    description: "On-time production and fast worldwide logistics.",
     icon: "/msbi/icons/timely-delivery.png",
   },
   {
     title: "Expert Support",
-    description:
-      "Responsive team providing dedicated support.",
+    description: "Responsive team providing dedicated support.",
     icon: "/msbi/icons/expert-support.png",
   },
 ];
@@ -61,43 +56,25 @@ export default function BrandsAndBenefits() {
           Our Brands
         </h2>
 
-        {/* Brands Bar */}
-        <div className="relative mt-8 flex min-h-[105px] items-center overflow-hidden bg-[#151E2D] px-12 sm:px-16">
-          {/* Left Arrow */}
-          <button
-            type="button"
-            aria-label="Previous brands"
-            className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center text-[38px] font-light leading-none text-white/90 transition hover:text-[#2D80F7]"
-          >
-            ‹
-          </button>
-
+        {/* Full Width Brands Bar */}
+        <div className="relative left-1/2 mt-8 flex min-h-[135px] w-screen -translate-x-1/2 items-center overflow-hidden bg-[#151E2D] px-6 sm:px-10 lg:px-12">
           {/* Brand Logos */}
-          <div className="flex w-full items-center justify-between gap-10 overflow-x-auto px-2 py-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="flex w-full items-center justify-between gap-6 overflow-x-auto px-2 py-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {brands.map((brand) => (
               <div
                 key={brand.name}
-                className="relative h-[52px] min-w-[145px] flex-1"
+                className="relative h-[75px] min-w-[180px] flex-1 md:h-[85px] md:min-w-[200px]"
               >
                 <Image
                   src={brand.logo}
                   alt={brand.name}
                   fill
-                  sizes="180px"
-                  className="object-contain"
+                  sizes="220px"
+                  className="scale-[2.8] object-contain object-center"
                 />
               </div>
             ))}
           </div>
-
-          {/* Right Arrow */}
-          <button
-            type="button"
-            aria-label="Next brands"
-            className="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center text-[38px] font-light leading-none text-white/90 transition hover:text-[#2D80F7]"
-          >
-            ›
-          </button>
         </div>
 
         {/* Why Choose Heading */}

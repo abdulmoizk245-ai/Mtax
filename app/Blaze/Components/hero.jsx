@@ -7,7 +7,7 @@ export default function BlazeHero() {
     <section className="relative w-full min-h-[620px] flex items-center overflow-hidden bg-[#050b1f]">
       {/* Background image */}
       <Image
-        src="/blaze/hero.png"
+        src="/blaze/hero1.png"
         alt="Blaze Group Hero"
         fill
         priority

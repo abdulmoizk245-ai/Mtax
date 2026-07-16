@@ -3,52 +3,52 @@ import Image from "next/image";
 const galleryImages = [
   {
     id: 1,
-    image: "/fabrica/gallery/fabric-1.jpg",
+    image: "/fabrica/fabric-1.png",
     alt: "Premium dark blue fabric",
   },
   {
     id: 2,
-    image: "/fabrica/gallery/fabric-2.jpg",
+    image: "/fabrica/fabric-2.png",
     alt: "Rolled industrial fabrics",
   },
   {
     id: 3,
-    image: "/fabrica/gallery/fabric-3.jpg",
+    image: "/fabrica/fabric-3.png",
     alt: "Textile manufacturing machinery",
   },
   {
     id: 4,
-    image: "/fabrica/gallery/fabric-4.jpg",
+    image: "/fabrica/fabric-4.png",
     alt: "Embroidery production machines",
   },
   {
     id: 5,
-    image: "/fabrica/gallery/fabric-5.jpg",
+    image: "/fabrica/fabric-5.png",
     alt: "Fabric sample collection",
   },
   {
     id: 6,
-    image: "/fabrica/gallery/fabric-6.jpg",
+    image: "/fabrica/fabric-6.png",
     alt: "Colorful textile threads",
   },
   {
     id: 7,
-    image: "/fabrica/gallery/fabric-7.jpg",
+    image: "/fabrica/fabric-7.png",
     alt: "Industrial fabric production",
   },
   {
     id: 8,
-    image: "/fabrica/gallery/fabric-8.jpg",
+    image: "/fabrica/fabric-8.png",
     alt: "Fabric rolls collection",
   },
   {
     id: 9,
-    image: "/fabrica/gallery/fabric-9.jpg",
+    image: "/fabrica/fabric-9.png",
     alt: "Industrial yarn production",
   },
   {
     id: 10,
-    image: "/fabrica/gallery/fabric-10.jpg",
+    image: "/fabrica/fabric-10.png",
     alt: "Premium rolled fabrics",
   },
 ];

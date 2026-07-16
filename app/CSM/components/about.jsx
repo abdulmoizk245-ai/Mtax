@@ -52,7 +52,7 @@ export default function AboutCSM() {
             {/* Left Image */}
             <div className="relative h-[280px] overflow-hidden rounded-[14px] border border-[#1687FF]/50 bg-[#081325] sm:h-[340px] lg:h-[390px]">
               <Image
-                src="/csm/factory.jpg"
+                src="/csm/factory.png"
                 alt="CSM Chemical Manufacturing Plant"
                 fill
                 priority

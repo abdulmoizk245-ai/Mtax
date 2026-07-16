@@ -31,27 +31,27 @@ const solutions = [
   {
     title: "Generator Supply",
     description: "Reliable generators for smooth operations.",
-    image: "/energy/solutions/generator-supply.jpg",
+    image: "/energy/generator-supply.png",
     icon: "/energy/solution-icons/generator.png",
   },
   {
     title: "Commercial Backup",
     description: "Fast backup power for business continuity.",
-    image: "/energy/solutions/commercial-backup.jpg",
+    image: "/energy/commercial-backup.png",
     icon: "/energy/solution-icons/backup.png",
   },
   {
     title: "Industrial Power Support",
     description:
       "Power solutions for plants and heavy-duty use.",
-    image: "/energy/solutions/industrial-power.jpg",
+    image: "/energy/industrial-power.png",
     icon: "/energy/solution-icons/industrial.png",
   },
   {
     title: "High-Capacity Solutions",
     description:
       "Scalable systems for large power demands.",
-    image: "/energy/solutions/high-capacity.jpg",
+    image: "/energy/high-capacity.png",
     icon: "/energy/solution-icons/high-capacity.png",
   },
 ];

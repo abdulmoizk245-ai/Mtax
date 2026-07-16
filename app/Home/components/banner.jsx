@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -38,8 +37,8 @@ export default function Banner() {
       </p>
 
       {/* Navigation */}
-<div
-  className="
+      <div
+        className="
     mt-3 flex w-full flex-nowrap items-center justify-between
     gap-x-[4px] overflow-hidden px-2 pb-3
 
@@ -51,24 +50,24 @@ export default function Banner() {
     lg:mt-[18px] lg:w-full lg:flex-nowrap lg:justify-center
     lg:gap-x-[30px] lg:px-8 lg:pb-[18px]
   "
->
-  {companies.map((item, index) => (
-    <Link
-      key={`${item.name}-${index}`}
-      href={item.href}
-      className={`shrink-0 whitespace-nowrap text-[clamp(6px,2.1vw,10px)] font-medium uppercase tracking-normal transition-colors md:text-[14px] md:tracking-[0.01em] lg:text-[30px] lg:tracking-[0.02em] ${
-        index === 0 ||
-        item.name === "MSBI" ||
-        item.name === "FABRICA" ||
-        item.name === "UNIVERSAL EXPORTS"
-          ? "text-[#1687FF]"
-          : "text-[#111827]"
-      }`}
-    >
-      {item.name}
-    </Link>
-  ))}
-</div>
+      >
+        {companies.map((item, index) => (
+          <Link
+            key={`${item.name}-${index}`}
+            href={item.href}
+            className={`shrink-0 whitespace-nowrap text-[clamp(6px,2.1vw,10px)] font-medium uppercase tracking-normal transition-colors md:text-[14px] md:tracking-[0.01em] lg:text-[30px] lg:tracking-[0.02em] ${
+              index === 0 ||
+              item.name === "MSBI" ||
+              item.name === "FABRICA" ||
+              item.name === "UNIVERSAL EXPORTS"
+                ? "text-[#1687FF]"
+                : "text-[#111827]"
+            }`}
+          >
+            {item.name}
+          </Link>
+        ))}
+      </div>
 
       {/* Bottom Line */}
       <div className="h-[3px] w-full bg-[#040D23]" />

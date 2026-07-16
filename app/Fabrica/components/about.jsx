@@ -31,7 +31,7 @@ export default function FabricaAbout() {
           </div>
 
           {/* Right Image */}
-          <div className="relative h-[300px] w-full overflow-hidden rounded-2xl shadow-lg md:h-[360px] md:w-1/2">
+          <div className="relative h-[300px] w-full overflow-hidden rounded-2xl shadow-lg md:h-[360px] md:w-1/2  lg:ml-110 lg:w-[450px]">
             <Image
               src="/fabrica/about.png"
               alt="Fabrica Fabric Texture"

@@ -21,9 +21,9 @@ export default function Homehero() {
           </p>
 
           {/* MTAX Image */}
-          <div className="relative mb-3 h-[80px] w-[280px] md:h-[120px] md:w-[460px] lg:h-[170px] lg:w-[600px]">
+          <div className="relative mt-10 h-[80px] w-[280px] md:h-[120px] md:w-[460px] lg:h-[170px] lg:w-[600px]">
             <Image
-              src="/images/brand6.png"
+              src="/images/white.png"
               alt="MTAX"
               fill
               priority
@@ -32,7 +32,7 @@ export default function Homehero() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="mb-5 text-[34px] font-extrabold uppercase leading-none tracking-tight md:text-[46px] lg:text-[62px]">
+          <h1 className=" text-[34px] font-extrabold uppercase leading-none tracking-tight md:text-[46px] lg:text-[62px]">
             Group of Companies
           </h1>
 

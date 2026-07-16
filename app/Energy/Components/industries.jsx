@@ -46,39 +46,39 @@ const supportItems = [
 const sectors = [
   {
     title: "Industrial Power",
-    image: "/energy/sectors/industrial-power.jpg",
+    image: "/energy/industrial-power1.png",
   },
   {
     title: "Commercial Backup",
-    image: "/energy/sectors/commercial-backup.jpg",
+    image: "/energy/commercial-backup (2).png",
   },
   {
     title: "Construction Sites",
-    image: "/energy/sectors/construction-sites.jpg",
+    image: "/energy/construction-sites.png",
   },
   {
     title: "Data Centers",
-    image: "/energy/sectors/data-centers.jpg",
+    image: "/energy/data-centers.png",
   },
   {
     title: "Healthcare",
-    image: "/energy/sectors/healthcare.jpg",
+    image: "/energy/healthcare.png",
   },
   {
     title: "Hospitality",
-    image: "/energy/sectors/hospitality.jpg",
+    image: "/energy/hospitality.png",
   },
   {
     title: "Infrastructure",
-    image: "/energy/sectors/infrastructure.jpg",
+    image: "/energy/infrastructure.png",
   },
   {
     title: "Remote Areas",
-    image: "/energy/sectors/remote-areas.jpg",
+    image: "/energy/remote-areas.png",
   },
   {
     title: "Project-Based Operations",
-    image: "/energy/sectors/project-operations.jpg",
+    image: "/energy/project-operations.png  ",
   },
 ];
 

@@ -316,7 +316,7 @@ export default function EnergyCapabilitiesOverview() {
         {/* Right Image */}
         <div className="relative aspect-[1.72/1] w-full overflow-hidden rounded-[9px] bg-[#EEF1F0] shadow-[0_5px_15px_rgba(18,30,24,0.08)]">
           <Image
-            src="/energy/capabilities-generators.jpg"
+            src="/energy/capabilities-generators.png"
             alt="Industrial generator systems"
             fill
             priority

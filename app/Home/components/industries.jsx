@@ -8,7 +8,7 @@ const industries = [
   "/images/industries5.png",
   "/images/industries6.png",
   "/images/industries7.jpg",
-  "/images/industries7.jpg",
+  "/images/industries81.png",
 ];
 
 export default function IndustriesSection() {
