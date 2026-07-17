@@ -10,7 +10,7 @@ export default function YuemeiBanner() {
         {/* Left Background Image */}
         <div className="absolute inset-y-0 left-0 hidden w-[36%] md:block">
           <Image
-            src="/page2/hero.png"
+            src="/page2/banner.png"
             alt="Yuemei embroidery production"
             fill
             priority

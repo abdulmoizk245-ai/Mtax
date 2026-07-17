@@ -31,7 +31,7 @@ export default function AboutShamooz() {
         {/* Left Image */}
         <div className="relative aspect-[0.95/1] w-full overflow-hidden rounded-[9px] bg-[#F3F0EB]">
           <Image
-            src="/shamooz/about.jpg"
+            src="/shamooz/about.pNg"
             alt="Shamooz premium fashion collection"
             fill
             priority

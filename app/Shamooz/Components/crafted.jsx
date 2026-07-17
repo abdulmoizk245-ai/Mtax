@@ -3,22 +3,22 @@ import Image from "next/image";
 const collectionImages = [
   {
     id: 1,
-    src: "/shamooz/collection/look-1.jpg",
+    src: "/shamooz/look-1.png",
     alt: "Shamooz elegant light outfit",
   },
   {
     id: 2,
-    src: "/shamooz/collection/look-2.jpg",
+    src: "/shamooz/look-2.png",
     alt: "Shamooz premium blue outfit",
   },
   {
     id: 3,
-    src: "/shamooz/collection/look-3.jpg",
+    src: "/shamooz/look-3.png",
     alt: "Shamooz modern formal outfit",
   },
   {
     id: 4,
-    src: "/shamooz/collection/look-4.jpg",
+    src: "/shamooz/look-4.png",
     alt: "Shamooz clothing collection",
   },
 ];

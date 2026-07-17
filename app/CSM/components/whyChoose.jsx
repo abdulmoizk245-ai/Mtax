@@ -41,10 +41,10 @@ export default function WhyChooseCSM() {
       <div className="relative mx-auto w-full">
         {/* Main Card */}
         <div className="relative min-h-[620px] w-full overflow-hidden rounded-[18px] bg-[#0B1427]">
-          {/* Full Width Background Image */}
-          <div className="absolute inset-0">
+          {/* Background Image constrained to the glowing border */}
+          <div className="absolute inset-y-0 left-3 right-3 overflow-hidden rounded-[18px] sm:left-5 sm:right-5 md:left-7 md:right-7 lg:left-10 lg:right-10">
             <Image
-              src="/csm/choose.png"
+              src="/csm/choose1.png"
               alt="CSM Laboratory"
               fill
               priority
@@ -104,21 +104,19 @@ export default function WhyChooseCSM() {
 
                     {/* Icon Box */}
                     <div
-                      className="flex h-[62px] w-[62px] shrink-0 items-center justify-center rounded-[10px] border border-[#1687FF]/70 bg-[#0E2245]/80 transition duration-300 group-hover:bg-[#12356A]"
+                      className="relative h-[62px] w-[62px] shrink-0 overflow-hidden rounded-[10px] border border-[#1687FF]/70 bg-[#0E2245]/80 transition duration-300 group-hover:bg-[#12356A]"
                       style={{
                         boxShadow:
                           "0 0 10px rgba(22,135,255,0.28), inset 0 0 12px rgba(22,135,255,0.08)",
                       }}
                     >
-                      <div className="relative h-[43px] w-[43px]">
-                        <Image
-                          src={reason.icon}
-                          alt={reason.title}
-                          fill
-                          sizes="43px"
-                          className="object-contain"
-                        />
-                      </div>
+                      <Image
+                        src={reason.icon}
+                        alt={reason.title}
+                        fill
+                        sizes="62px"
+                        className="scale-150 object-cover"
+                      />
                     </div>
 
                     {/* Text */}

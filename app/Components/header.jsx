@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaChevronDown } from "react-icons/fa";
 
 const companies = [
@@ -17,12 +18,19 @@ const companies = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [companiesOpen, setCompaniesOpen] = useState(false);
   const [mobileCompaniesOpen, setMobileCompaniesOpen] = useState(false);
 
   const dropdownRef = useRef(null);
   const closeTimeoutRef = useRef(null);
+
+  const isHomeActive = pathname === "/";
+  const isContactActive = pathname === "/contact";
+  const isCompaniesActive = companies.some(
+    (company) => company.href === pathname
+  );
 
   const openCompanies = () => {
     if (closeTimeoutRef.current) {
@@ -87,7 +95,11 @@ export default function Header() {
         <nav className="hidden items-center justify-center gap-6 md:flex">
           <Link
             href="/"
-            className="rounded-md bg-blue-500 px-3 py-1.5 text-sm font-medium text-white shadow-sm"
+            className={`rounded-md px-3 py-1.5 text-sm font-medium  transition-colors ${
+              isHomeActive
+                ? "bg-blue-500 text-white"
+                : "bg-transparent text-gray-800 hover:text-blue-600"
+            }`}
           >
             Home
           </Link>
@@ -110,7 +122,11 @@ export default function Header() {
 
                 setCompaniesOpen((open) => !open);
               }}
-              className="flex items-center gap-2 text-sm font-medium text-gray-800 transition-colors hover:text-blue-600"
+              className={`flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
+                isCompaniesActive
+                  ? "bg-blue-500 text-white"
+                  : "bg-transparent text-gray-800 hover:text-blue-600"
+              }`}
             >
               Group of Companies
               <FaChevronDown
@@ -128,7 +144,11 @@ export default function Header() {
                     key={company.href}
                     href={company.href}
                     onClick={() => setCompaniesOpen(false)}
-                    className="block px-4 py-2 text-sm text-gray-800 transition-colors hover:bg-gray-100 hover:text-blue-600"
+                    className={`block px-4 py-2 text-sm transition-colors ${
+                      pathname === company.href
+                        ? "bg-blue-500 text-white"
+                        : "text-gray-800 hover:bg-gray-100 hover:text-blue-600"
+                    }`}
                   >
                     {company.name}
                   </Link>
@@ -139,7 +159,11 @@ export default function Header() {
 
           <Link
             href="/contact"
-            className="text-sm font-medium text-gray-800 transition-colors hover:text-blue-600"
+            className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
+              isContactActive
+                ? "bg-blue-500 text-white"
+                : "bg-transparent text-gray-800 hover:text-blue-600"
+            }`}
           >
             Contact Us
           </Link>
@@ -191,7 +215,11 @@ export default function Header() {
           <Link
             href="/"
             onClick={() => setMenuOpen(false)}
-            className="rounded-md bg-blue-500 px-3 py-2 text-sm font-medium text-white shadow-sm"
+            className={`rounded-md px-3 py-2 text-sm font-medium shadow-sm transition-colors ${
+              isHomeActive
+                ? "bg-blue-500 text-white"
+                : "bg-transparent text-gray-800 hover:bg-gray-100 hover:text-blue-600"
+            }`}
           >
             Home
           </Link>
@@ -203,7 +231,11 @@ export default function Header() {
             onClick={() => {
               setMobileCompaniesOpen((open) => !open);
             }}
-            className="flex items-center justify-between rounded-md px-3 py-2 text-sm font-medium text-gray-800 transition-colors hover:bg-gray-100 hover:text-blue-600"
+            className={`flex items-center justify-between rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+              isCompaniesActive
+                ? "bg-blue-500 text-white"
+                : "bg-transparent text-gray-800 hover:bg-gray-100 hover:text-blue-600"
+            }`}
           >
             Group of Companies
             <FaChevronDown
@@ -227,7 +259,11 @@ export default function Header() {
                   setMenuOpen(false);
                   setMobileCompaniesOpen(false);
                 }}
-                className="block rounded-md px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-100 hover:text-blue-600"
+                className={`block rounded-md px-3 py-2 text-sm transition-colors ${
+                  pathname === company.href
+                    ? "bg-blue-500 text-white"
+                    : "text-gray-600 hover:bg-gray-100 hover:text-blue-600"
+                }`}
               >
                 {company.name}
               </Link>
@@ -237,7 +273,11 @@ export default function Header() {
           <Link
             href="/contact"
             onClick={() => setMenuOpen(false)}
-            className="rounded-md px-3 py-2 text-sm font-medium text-gray-800 transition-colors hover:bg-gray-100 hover:text-blue-600"
+            className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+              isContactActive
+                ? "bg-blue-500 text-white"
+                : "bg-transparent text-gray-800 hover:bg-gray-100 hover:text-blue-600"
+            }`}
           >
             Contact Us
           </Link>

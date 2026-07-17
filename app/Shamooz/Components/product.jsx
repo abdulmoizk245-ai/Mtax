@@ -5,21 +5,21 @@ const products = [
     title: "Ready-to-Wear Clothing",
     description:
       "Modern and stylish outfits designed for comfort and elegance.",
-    image: "/shamooz/products/ready-to-wear.jpg",
+    image: "/shamooz/ready-to-wear.png",
     icon: "/shamooz/icons/clothing.png",
   },
   {
     title: "Unstitched Fabrics",
     description:
       "High-quality fabrics available in stylish designs for custom tailoring.",
-    image: "/shamooz/products/unstitched-fabrics.jpg",
+    image: "/shamooz/unstitched-fabrics.png",
     icon: "/shamooz/icons/fabric.png",
   },
   {
     title: "Accessories",
     description:
       "Complementary accessories to enhance your fashion statement.",
-    image: "/shamooz/products/accessories.jpg",
+    image: "/shamooz/accessories.png",
     icon: "/shamooz/icons/accessories.png",
   },
 ];

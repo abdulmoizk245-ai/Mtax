@@ -76,7 +76,7 @@ export default function FeatureSection() {
             {/* Main Center Machine Image */}
             <div className="absolute left-1/2 top-[5%] z-20 h-[87%] w-[51%] -translate-x-1/2 overflow-hidden rounded-[14px] border-[3px] border-white bg-white shadow-2xl">
               <Image
-                src="/page2/machine.png"
+                src="/page2/machine1.png"
                 alt="Yuemei Embroidery Machine"
                 fill
                 priority

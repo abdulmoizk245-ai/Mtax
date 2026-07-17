@@ -3,27 +3,27 @@ import Image from "next/image";
 const galleryImages = [
   {
     id: 1,
-    image: "/universal/gallery/fabric-1.jpg",
+    image: "/universal/fabric-1.png",
     alt: "Folded premium fabrics",
   },
   {
     id: 2,
-    image: "/universal/gallery/fabric-2.jpg",
+    image: "/universal/fabric-2.png",
     alt: "Fabric rolls and thread materials",
   },
   {
     id: 3,
-    image: "/universal/gallery/fabric-3.jpg",
+    image: "/universal/fabric-3.png",
     alt: "Premium cream crepe fabric",
   },
   {
     id: 4,
-    image: "/universal/gallery/fabric-4.jpg",
+    image: "/universal/fabric-4.png",
     alt: "Textile warehouse fabric rolls",
   },
   {
     id: 5,
-    image: "/universal/gallery/fabric-5.jpg",
+    image: "/universal/about2.png",
     alt: "Colorful folded fabric collection",
   },
 ];

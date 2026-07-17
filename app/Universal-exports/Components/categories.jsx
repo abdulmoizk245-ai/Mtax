@@ -4,12 +4,12 @@ const categories = [
   {
     title: "Crepe Fabrics",
     description: "Elegant textures in multiple shades and finishes.",
-    image: "/universal/categories/crepe-fabrics.jpg",
+    image: "/universal/crepe-fabrics.png",
   },
   {
     title: "Thread Materials",
     description: "Strong, smooth & colorfast threads for every application.",
-    image: "/universal/categories/thread-materials.jpg",
+    image: "/universal/thread-materials.png",
   },
 ];
 
