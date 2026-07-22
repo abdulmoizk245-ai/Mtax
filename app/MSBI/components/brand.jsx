@@ -59,11 +59,14 @@ export default function BrandsAndBenefits() {
         {/* Full Width Brands Bar */}
         <div className="relative left-1/2 mt-8 flex min-h-[135px] w-screen -translate-x-1/2 items-center overflow-hidden bg-[#151E2D] px-6 sm:px-10 lg:px-12">
           {/* Brand Logos */}
-          <div className="flex w-full items-center justify-between gap-6 overflow-x-auto px-2 py-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {brands.map((brand) => (
+          <div
+            className="flex w-max items-center gap-16 py-5"
+            style={{ animation: "marquee-scroll 22s linear infinite" }}
+          >
+            {[...brands, ...brands].map((brand, index) => (
               <div
-                key={brand.name}
-                className="relative h-[75px] min-w-[180px] flex-1 md:h-[85px] md:min-w-[200px]"
+                key={`${brand.name}-${index}`}
+                className="relative h-[75px] w-[180px] shrink-0 md:h-[85px] md:w-[200px]"
               >
                 <Image
                   src={brand.logo}
@@ -94,7 +97,7 @@ export default function BrandsAndBenefits() {
           {benefits.map((benefit) => (
             <article
               key={benefit.title}
-              className="group flex min-h-[235px] flex-col items-center justify-start rounded-[10px] border border-[#DDE3EC] bg-white px-5 py-7 text-center shadow-[0_3px_14px_rgba(23,35,55,0.04)] transition duration-300 hover:-translate-y-1 hover:border-[#2D80F7]/40 hover:shadow-[0_10px_25px_rgba(23,35,55,0.10)]"
+              className="tilt-card group flex min-h-[235px] flex-col items-center justify-start rounded-[10px] border border-[#DDE3EC] bg-white px-5 py-7 text-center shadow-[0_3px_14px_rgba(23,35,55,0.04)] transition-colors duration-300 hover:border-[#2D80F7]/40"
             >
               {/* Icon */}
               <div className="relative mb-5 h-[54px] w-[54px]">

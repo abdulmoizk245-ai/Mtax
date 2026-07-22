@@ -5,6 +5,7 @@ import Banner from "../Home/components/banner";
 import Footer from "../Components/footer";
 import ContactPage from "../Components/contact";
 import Link from "next/link";
+import Reveal from "../Components/Reveal";
 
 export default function Contact() {
     const mapLink =
@@ -44,7 +45,7 @@ export default function Contact() {
       <section className="w-full bg-white px-5 py-8 sm:px-8 md:py-10 lg:px-12">
       <div className="mx-auto w-full max-w-[1400px]">
         {/* Map Card */}
-        <div className="relative min-h-[380px] overflow-hidden rounded-[11px] border border-[#1687FF] bg-[#0B1E3D] shadow-[0_5px_18px_rgba(15,35,65,0.16)] sm:min-h-[420px] lg:min-h-[480px]">
+        <Reveal className="relative min-h-[380px] overflow-hidden rounded-[11px] border border-[#1687FF] bg-[#0B1E3D] shadow-[0_5px_18px_rgba(15,35,65,0.16)] sm:min-h-[420px] lg:min-h-[480px]">
           {/* Live Google Map */}
           <iframe
             src="https://www.google.com/maps?q=24.8296403,67.0715858&z=17&output=embed"
@@ -98,25 +99,25 @@ export default function Contact() {
                 href={mapLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-[#1375E6] px-4 py-2.5 text-[13px] font-semibold uppercase text-white transition hover:bg-[#0f5dbf]"
+                className="btn-shine mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-[#1375E6] px-4 py-2.5 text-[13px] font-semibold uppercase text-white transition hover:bg-[#0f5dbf]"
               >
                 Open in Google Maps
                 <FaExternalLinkAlt className="text-[11px]" />
               </Link>
             </div>
           </div>
-        </div>
+        </Reveal>
 
         {/* Bottom Heading */}
-        <div className="pt-8 text-center sm:pt-10">
+        <Reveal delay={80} className="pt-8 text-center sm:pt-10">
           <h2 className="text-[26px] font-extrabold uppercase leading-tight text-[#1D293D] md:text-[32px]">
             Have Any Questions?
           </h2>
-        </div>
+        </Reveal>
       </div>
     </section>
-      <ContactPage/>
-      <Banner/>
+      <Reveal delay={80}><ContactPage/></Reveal>
+      <Reveal delay={80}><Banner/></Reveal>
       <Footer/>
     </main>
   );

@@ -6,6 +6,7 @@ import BlazeAbout from "./Components/about";
 import BlazeProducts from "./Components/product";
 import BlazeWhyChoose from "./Components/whychooseus";
 import ContactPage from "../Components/contact";
+import Reveal from "../Components/Reveal";
 
 
 export default function Blaze() {
@@ -13,11 +14,11 @@ export default function Blaze() {
         <>
         <Header />
         <BlazeHero/>
-        <BlazeAbout/>
-        <BlazeProducts/>
-        <BlazeWhyChoose/>
-        <ContactPage/>
-        <Banner/>
+        <Reveal><BlazeAbout/></Reveal>
+        <Reveal delay={80}><BlazeProducts/></Reveal>
+        <Reveal delay={80}><BlazeWhyChoose/></Reveal>
+        <Reveal delay={80}><ContactPage/></Reveal>
+        <Reveal delay={80}><Banner/></Reveal>
         <Footer/>
         </>
     )

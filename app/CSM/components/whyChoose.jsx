@@ -104,7 +104,7 @@ export default function WhyChooseCSM() {
 
                     {/* Icon Box */}
                     <div
-                      className="relative h-[62px] w-[62px] shrink-0 overflow-hidden rounded-[10px] border border-[#1687FF]/70 bg-[#0E2245]/80 transition duration-300 group-hover:bg-[#12356A]"
+                      className="tilt-card relative h-[62px] w-[62px] shrink-0 overflow-hidden rounded-[10px] border border-[#1687FF]/70 bg-[#0E2245]/80 transition-colors duration-300 group-hover:bg-[#12356A]"
                       style={{
                         boxShadow:
                           "0 0 10px rgba(22,135,255,0.28), inset 0 0 12px rgba(22,135,255,0.08)",

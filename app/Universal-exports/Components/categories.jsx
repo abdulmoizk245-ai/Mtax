@@ -49,7 +49,7 @@ export default function UniversalCategories() {
               {categories.map((category) => (
                 <article
                   key={category.title}
-                  className="grid min-h-[145px] grid-cols-[46%_54%] overflow-hidden rounded-[7px] border border-[#365A8C] bg-[#213655] shadow-[0_5px_14px_rgba(0,0,0,0.2)]"
+                  className="tilt-card grid min-h-[145px] grid-cols-[46%_54%] overflow-hidden rounded-[7px] border border-[#365A8C] bg-[#213655] shadow-[0_5px_14px_rgba(0,0,0,0.2)]"
                 >
                   {/* Image */}
                   <div className="relative min-h-[145px] overflow-hidden">

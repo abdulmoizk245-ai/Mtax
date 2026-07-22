@@ -39,34 +39,39 @@ export default function Banner() {
       {/* Navigation */}
       <div
         className="
-    mt-3 flex w-full flex-nowrap items-center justify-between
-    gap-x-[4px] overflow-hidden px-2 pb-3
+    relative mt-3 w-full overflow-hidden px-2 pb-3
+    [mask-image:linear-gradient(90deg,transparent,#000_6%,#000_94%,transparent)]
 
-    sm:gap-x-[7px] sm:px-3
+    sm:px-3
 
-    md:justify-center md:gap-x-[18px]
-    md:overflow-visible md:px-5 md:pb-4
+    md:px-5 md:pb-4
 
-    lg:mt-[18px] lg:w-full lg:flex-nowrap lg:justify-center
-    lg:gap-x-[30px] lg:px-8 lg:pb-[18px]
+    lg:mt-[18px] lg:px-8 lg:pb-[18px]
   "
       >
-        {companies.map((item, index) => (
-          <Link
-            key={`${item.name}-${index}`}
-            href={item.href}
-            className={`shrink-0 whitespace-nowrap text-[clamp(6px,2.1vw,10px)] font-medium uppercase tracking-normal transition-colors md:text-[14px] md:tracking-[0.01em] lg:text-[30px] lg:tracking-[0.02em] ${
-              index === 0 ||
-              item.name === "MSBI" ||
-              item.name === "FABRICA" ||
-              item.name === "UNIVERSAL EXPORTS"
-                ? "text-[#1687FF]"
-                : "text-[#111827]"
-            }`}
-          >
-            {item.name}
-          </Link>
-        ))}
+        <div
+          className="flex w-max flex-nowrap items-center gap-x-[16px] sm:gap-x-[24px] md:gap-x-[32px] lg:gap-x-[44px]"
+          style={{
+            animation: "marquee-scroll 18s linear infinite",
+          }}
+        >
+          {[...companies, ...companies].map((item, index) => (
+            <Link
+              key={`${item.name}-${index}`}
+              href={item.href}
+              className={`shrink-0 whitespace-nowrap text-[13px] font-medium uppercase tracking-normal transition-colors md:text-[14px] md:tracking-[0.01em] lg:text-[30px] lg:tracking-[0.02em] ${
+                index % companies.length === 0 ||
+                item.name === "MSBI" ||
+                item.name === "FABRICA" ||
+                item.name === "UNIVERSAL EXPORTS"
+                  ? "text-[#1687FF]"
+                  : "text-[#111827]"
+              }`}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
       </div>
 
       {/* Bottom Line */}

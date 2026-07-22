@@ -39,7 +39,7 @@ export default function OurProduct() {
           {products.map((product) => (
             <article
               key={product.id}
-              className="group relative h-[280px] overflow-hidden rounded-[18px] bg-[#111827] sm:h-[320px] lg:h-[365px]"
+              className="tilt-card group relative h-[280px] overflow-hidden rounded-[18px] bg-[#111827] sm:h-[320px] lg:h-[365px]"
             >
               {/* Background Image */}
               <Image

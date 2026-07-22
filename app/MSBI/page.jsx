@@ -7,6 +7,7 @@ import Banner from "../Home/components/banner";
 import Footer from "../Components/footer";
 import OurProduct from "./components/product";
 import BrandsAndBenefits from "./components/brand";
+import Reveal from "../Components/Reveal";
 
 export default function MSBI()
 {
@@ -14,11 +15,11 @@ export default function MSBI()
         <>
         <Header/>
             <MSBIHero />
-            <AboutMSBI />
-            <OurProduct/>
-            <BrandsAndBenefits/>
-            <ContactPage/>
-            <Banner/>
+            <Reveal><AboutMSBI /></Reveal>
+            <Reveal delay={80}><OurProduct/></Reveal>
+            <Reveal delay={80}><BrandsAndBenefits/></Reveal>
+            <Reveal delay={80}><ContactPage/></Reveal>
+            <Reveal delay={80}><Banner/></Reveal>
             <Footer/>
         </>
     )

@@ -36,7 +36,7 @@ export default function UniversalGallery() {
           {galleryImages.map((item, index) => (
             <div
               key={item.id}
-              className="group relative aspect-square w-full overflow-hidden rounded-[20px] bg-[#F3EFEA]"
+              className="tilt-card group relative aspect-square w-full overflow-hidden rounded-[20px] bg-[#F3EFEA]"
             >
               <Image
                 src={item.image}

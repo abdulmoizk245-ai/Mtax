@@ -45,7 +45,7 @@ export default function TextileSolutions() {
           {solutions.map((solution) => (
             <article
               key={solution.title}
-              className="group flex min-h-[285px] flex-col items-center rounded-[8px] border border-[#E2E6EC] bg-white px-5 pb-8 pt-7 text-center shadow-[0_4px_12px_rgba(15,23,42,0.09)] transition-all duration-300 hover:-translate-y-1 hover:border-[#2D80F7]/40 hover:shadow-[0_10px_25px_rgba(15,23,42,0.12)] sm:min-h-[315px] sm:px-6 sm:pt-9"
+              className="tilt-card group flex min-h-[285px] flex-col items-center rounded-[8px] border border-[#E2E6EC] bg-white px-5 pb-8 pt-7 text-center shadow-[0_4px_12px_rgba(15,23,42,0.09)] transition-colors duration-300 hover:border-[#2D80F7]/40 sm:min-h-[315px] sm:px-6 sm:pt-9"
             >
               {/* Icon Image */}
               <div className="relative h-[62px] w-[62px]">

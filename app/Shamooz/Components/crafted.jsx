@@ -47,7 +47,7 @@ export default function CraftedElegance() {
           {collectionImages.map((item, index) => (
             <div
               key={item.id}
-              className="group relative h-[210px] overflow-hidden bg-[#F1ECE6] sm:h-[235px] lg:h-[255px]"
+              className="tilt-card group relative h-[210px] overflow-hidden bg-[#F1ECE6] sm:h-[235px] lg:h-[255px]"
             >
               <Image
                 src={item.src}

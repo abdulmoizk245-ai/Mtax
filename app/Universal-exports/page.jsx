@@ -7,6 +7,7 @@ import UniversalCategories from "./Components/categories";
 import UniversalGallery from "./Components/gallery";
 import UniversalExportsHero from "./Components/hero";
 import WhyChooseUniversal from "./Components/whychooseus";
+import Reveal from "../Components/Reveal";
 
 
 export default function UniversalExportsPage() {
@@ -14,13 +15,13 @@ export default function UniversalExportsPage() {
         <>
         <Header />
         <UniversalExportsHero/>
-        <AboutUniversalExports/>
-        <UniversalCategories/>
-        <UniversalGallery/>
-        <WhyChooseUniversal/>
+        <Reveal><AboutUniversalExports/></Reveal>
+        <Reveal delay={80}><UniversalCategories/></Reveal>
+        <Reveal delay={80}><UniversalGallery/></Reveal>
+        <Reveal delay={80}><WhyChooseUniversal/></Reveal>
 
-        <ContactPage/>
-        <Banner/>
+        <Reveal delay={80}><ContactPage/></Reveal>
+        <Reveal delay={80}><Banner/></Reveal>
         <Footer />
         </>
     )

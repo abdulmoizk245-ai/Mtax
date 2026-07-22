@@ -38,7 +38,7 @@ export default function ShamoozProductRange() {
           {products.map((product, index) => (
             <article
               key={product.title}
-              className="group relative overflow-hidden rounded-[7px] border border-[#B58D4D]/70 bg-[#172238] shadow-[0_5px_18px_rgba(0,0,0,0.22)] transition duration-300 hover:-translate-y-1 hover:border-[#D1A85F]"
+              className="tilt-card group relative overflow-hidden rounded-[7px] border border-[#B58D4D]/70 bg-[#172238] shadow-[0_5px_18px_rgba(0,0,0,0.22)] transition-colors duration-300 hover:border-[#D1A85F]"
             >
               {/* Product Image */}
               <div className="relative h-[225px] w-full overflow-hidden sm:h-[240px] lg:h-[250px]">

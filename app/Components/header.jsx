@@ -69,7 +69,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="w-full bg-white">
+    <header className="relative z-50 w-full bg-white animate-header-in">
       {/* Top Dark Line */}
       {/* <div className="h-[4px] w-full bg-[#171d2c]" /> */}
 
@@ -78,7 +78,7 @@ export default function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className="justify-self-start"
+          className="justify-self-start transition-transform duration-300 hover:scale-105"
           onClick={() => setMenuOpen(false)}
         >
           <Image
@@ -95,7 +95,7 @@ export default function Header() {
         <nav className="hidden items-center justify-center gap-6 md:flex">
           <Link
             href="/"
-            className={`rounded-md px-3 py-1.5 text-sm font-medium  transition-colors ${
+            className={`nav-underline rounded-md px-3 py-1.5 text-sm font-medium transition-all duration-300 ${
               isHomeActive
                 ? "bg-blue-500 text-white"
                 : "bg-transparent text-gray-800 hover:text-blue-600"
@@ -122,7 +122,7 @@ export default function Header() {
 
                 setCompaniesOpen((open) => !open);
               }}
-              className={`flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
+              className={`nav-underline flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium transition-all duration-300 ${
                 isCompaniesActive
                   ? "bg-blue-500 text-white"
                   : "bg-transparent text-gray-800 hover:text-blue-600"
@@ -138,16 +138,16 @@ export default function Header() {
             </button>
 
             {companiesOpen && (
-              <div className="absolute left-1/2 top-full z-20 mt-2 w-56 -translate-x-1/2 rounded-md border border-gray-200 bg-white py-2 shadow-lg">
+              <div className="animate-fade-in absolute left-1/2 top-full z-20 mt-2 w-56 -translate-x-1/2 rounded-md border border-gray-200 bg-white py-2 shadow-lg">
                 {companies.map((company) => (
                   <Link
                     key={company.href}
                     href={company.href}
                     onClick={() => setCompaniesOpen(false)}
-                    className={`block px-4 py-2 text-sm transition-colors ${
+                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
                       pathname === company.href
                         ? "bg-blue-500 text-white"
-                        : "text-gray-800 hover:bg-gray-100 hover:text-blue-600"
+                        : "text-gray-800 hover:bg-gray-100 hover:text-blue-600 hover:pl-5"
                     }`}
                   >
                     {company.name}
@@ -159,7 +159,7 @@ export default function Header() {
 
           <Link
             href="/contact"
-            className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
+            className={`nav-underline rounded-md px-3 py-1.5 text-sm font-medium transition-all duration-300 ${
               isContactActive
                 ? "bg-blue-500 text-white"
                 : "bg-transparent text-gray-800 hover:text-blue-600"
@@ -198,7 +198,7 @@ export default function Header() {
           aria-expanded={menuOpen}
           aria-controls="mobile-nav"
           onClick={() => setMenuOpen((open) => !open)}
-          className="justify-self-end rounded-md border border-gray-300 px-3 py-2 text-sm font-medium text-[#111827] md:hidden"
+          className="justify-self-end rounded-md border border-gray-300 px-3 py-2 text-sm font-medium text-[#111827] transition-all duration-300 hover:border-blue-500 hover:text-blue-600 md:hidden"
         >
           {menuOpen ? "Close" : "Menu"}
         </button>
@@ -207,18 +207,18 @@ export default function Header() {
       {/* Mobile Navigation */}
       <div
         id="mobile-nav"
-        className={`overflow-hidden border-t border-gray-200 transition-[max-height] duration-300 ease-in-out md:hidden ${
-          menuOpen ? "max-h-[560px]" : "max-h-0"
+        className={`overflow-hidden border-t border-gray-200 transition-[max-height,opacity] duration-300 ease-in-out md:hidden ${
+          menuOpen ? "max-h-[560px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <nav className="flex flex-col gap-1 px-4 py-3 sm:px-6">
           <Link
             href="/"
             onClick={() => setMenuOpen(false)}
-            className={`rounded-md px-3 py-2 text-sm font-medium shadow-sm transition-colors ${
+            className={`rounded-md px-3 py-2 text-sm font-medium shadow-sm transition-all duration-200 ${
               isHomeActive
                 ? "bg-blue-500 text-white"
-                : "bg-transparent text-gray-800 hover:bg-gray-100 hover:text-blue-600"
+                : "bg-transparent text-gray-800 hover:bg-gray-100 hover:pl-4 hover:text-blue-600"
             }`}
           >
             Home
@@ -231,7 +231,7 @@ export default function Header() {
             onClick={() => {
               setMobileCompaniesOpen((open) => !open);
             }}
-            className={`flex items-center justify-between rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+            className={`flex items-center justify-between rounded-md px-3 py-2 text-sm font-medium transition-colors duration-200 ${
               isCompaniesActive
                 ? "bg-blue-500 text-white"
                 : "bg-transparent text-gray-800 hover:bg-gray-100 hover:text-blue-600"
@@ -259,10 +259,10 @@ export default function Header() {
                   setMenuOpen(false);
                   setMobileCompaniesOpen(false);
                 }}
-                className={`block rounded-md px-3 py-2 text-sm transition-colors ${
+                className={`block rounded-md px-3 py-2 text-sm transition-all duration-200 ${
                   pathname === company.href
                     ? "bg-blue-500 text-white"
-                    : "text-gray-600 hover:bg-gray-100 hover:text-blue-600"
+                    : "text-gray-600 hover:bg-gray-100 hover:pl-4 hover:text-blue-600"
                 }`}
               >
                 {company.name}
@@ -273,10 +273,10 @@ export default function Header() {
           <Link
             href="/contact"
             onClick={() => setMenuOpen(false)}
-            className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+            className={`rounded-md px-3 py-2 text-sm font-medium transition-all duration-200 ${
               isContactActive
                 ? "bg-blue-500 text-white"
-                : "bg-transparent text-gray-800 hover:bg-gray-100 hover:text-blue-600"
+                : "bg-transparent text-gray-800 hover:bg-gray-100 hover:pl-4 hover:text-blue-600"
             }`}
           >
             Contact Us

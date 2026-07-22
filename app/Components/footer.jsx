@@ -1,21 +1,22 @@
 import Link from "next/link";
+import Reveal from "./Reveal";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="w-full bg-[#1B2436] text-white">
       {/* Contact Info */}
-      <div className="px-6 pt-[34px] pb-[28px] text-center">
+      <Reveal as="div" className="px-6 pt-[34px] pb-[28px] text-center">
         <h2 className="text-[30px] font-semibold tracking-[0.04em] md:text-[36px]">
           CONTACT <span className="text-[#1687FF]">US</span>
         </h2>
 
         <div className="mt-[18px] space-y-[8px] text-[16px] font-normal leading-[1.4] text-white md:text-[18px] lg:text-[22px]">
-          <p>021-35311837</p>
-          <p>info@mtaxgroupofcompaniespakistan.com</p>
+          <p className="transition-colors duration-300 hover:text-[#1687FF]">021-35311837</p>
+          <p className="transition-colors duration-300 hover:text-[#1687FF]">info@mtaxgroupofcompaniespakistan.com</p>
           <p>Plot 34-C, Street 3, Jami Commercial, Phase 7 DHA, Karachi</p>
         </div>
-      </div>
+      </Reveal>
 
       {/* Divider */}
       <div className="h-[2px] w-full bg-white" />
@@ -25,13 +26,13 @@ export default function Footer() {
         <p>© {currentYear} MTAX Group of Companies. All Rights Reserved.</p>
 
         <div className="flex items-center gap-1">
-          <Link href="/privacy-policy" className="transition hover:text-[#1687FF]">
+          <Link href="/privacy-policy" className="nav-underline transition-colors duration-300 hover:text-[#1687FF]">
             Privacy Policy
           </Link>
 
           <span>|</span>
 
-          <Link href="/terms-conditions" className="transition hover:text-[#1687FF]">
+          <Link href="/terms-conditions" className="nav-underline transition-colors duration-300 hover:text-[#1687FF]">
             Terms &amp; Conditions
           </Link>
         </div>

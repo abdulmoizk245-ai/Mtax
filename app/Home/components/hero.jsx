@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import SplitHeading from "../../Components/SplitHeading";
 
 export default function Homehero() {
   return (
@@ -32,14 +33,21 @@ export default function Homehero() {
           </div>
 
           {/* Main Heading */}
-          <h1 className=" text-[34px] font-extrabold uppercase leading-none tracking-tight md:text-[46px] lg:text-[62px]">
+          <SplitHeading
+            as="h1"
+            className=" text-[34px] font-extrabold uppercase leading-none tracking-tight md:text-[46px] lg:text-[62px]"
+          >
             Group of Companies
-          </h1>
+          </SplitHeading>
 
           <div className="mb-5 text-center">
-            <h2 className="text-[26px] font-semibold leading-tight text-white md:text-[32px] lg:text-[22px]">
+            <SplitHeading
+              as="h2"
+              startDelay={350}
+              className="text-[26px] font-semibold leading-tight text-white md:text-[32px] lg:text-[22px]"
+            >
               Innovation, Quality, & Excellence
-            </h2>
+            </SplitHeading>
 
             <div className="relative mx-auto mt-2 h-[8px] w-full max-w-[400px]">
               {/* Start + End thin line */}
@@ -74,7 +82,7 @@ export default function Homehero() {
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-40">
             <a
               href="/contact"
-              className="rounded-[3px] px-6 py-3 text-[13px] font-semibold text-white shadow-md transition hover:opacity-90 md:text-[15px] lg:text-[13px]"
+              className="btn-shine btn-glow rounded-[3px] px-6 py-3 text-[13px] font-semibold text-white shadow-md transition hover:opacity-90 md:text-[15px] lg:text-[13px]"
               style={{
                 background: "linear-gradient(90deg, #1375E6 0%, #0B4180 100%)",
               }}
@@ -84,7 +92,7 @@ export default function Homehero() {
 
             <a
               href="/contact"
-              className="rounded-[3px] border border-white/80 px-6 py-3 text-[13px] font-semibold text-white transition hover:bg-white hover:text-[#0B4180] md:text-[15px] lg:text-[13px]"
+              className="btn-shine rounded-[3px] border border-white/80 px-6 py-3 text-[13px] font-semibold text-white transition hover:bg-white hover:text-[#0B4180] md:text-[15px] lg:text-[13px]"
             >
               Contact Us →
             </a>
@@ -95,7 +103,7 @@ export default function Homehero() {
       <section className="w-full bg-white py-8 md:py-12 lg:py-16">
         <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-10 px-4 md:ml-0 md:flex-row md:items-start md:px-6 lg:ml-[30px] lg:px-0">
           {/* Left Image */}
-          <div className="relative h-[280px] w-full max-w-[554px] shrink-0 sm:h-[340px] md:h-[402px] md:w-[554px]">
+          <div className="tilt-card relative h-[280px] w-full max-w-[554px] shrink-0 sm:h-[340px] md:h-[402px] md:w-[554px]">
             <div className="absolute inset-0 rotate-[0.26deg] bg-[#1375E6]" />
 
             <div className="absolute inset-[4px] overflow-hidden bg-white">

@@ -9,6 +9,7 @@ import EnergyCategoryBar from "./Components/bar";
 import EnergyIndustriesSupport from "./Components/industries";
 import GeneratorCTA from "./Components/generator";
 import Energy from "./Components/energy";
+import Reveal from "../Components/Reveal";
 
 
 export default function EnergyPage() {
@@ -16,14 +17,14 @@ export default function EnergyPage() {
         <>
         <Header />
         <EnergyHero/>
-        <EnergyAbout/>
-        <EnergyCategoryBar/>
-        <Energy/>
-        <EnergyCapabilities/>
-        <EnergyIndustriesSupport/>
-        <GeneratorCTA/>
-        <ContactPage/>
-        <Banner/>
+        <Reveal><EnergyAbout/></Reveal>
+        <Reveal delay={80}><EnergyCategoryBar/></Reveal>
+        <Reveal delay={80}><Energy/></Reveal>
+        <Reveal delay={80}><EnergyCapabilities/></Reveal>
+        <Reveal delay={80}><EnergyIndustriesSupport/></Reveal>
+        <Reveal delay={80}><GeneratorCTA/></Reveal>
+        <Reveal delay={80}><ContactPage/></Reveal>
+        <Reveal delay={80}><Banner/></Reveal>
         <Footer />
         </>
     )

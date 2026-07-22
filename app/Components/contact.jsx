@@ -185,7 +185,7 @@ export default function ContactPage() {
               {/* Submit */}
               <button
                 type="submit"
-                className="mt-3 flex h-[40px] w-full items-center justify-center rounded-[4px] bg-white text-[15px] font-bold text-[#1687FF] transition hover:bg-[#1687FF] hover:text-white md:text-[16px] lg:text-[19px]"
+                className="btn-shine mt-3 flex h-[40px] w-full items-center justify-center rounded-[4px] bg-white text-[15px] font-bold text-[#1687FF] transition hover:bg-[#1687FF] hover:text-white md:text-[16px] lg:text-[19px]"
               >
                 Submit
               </button>

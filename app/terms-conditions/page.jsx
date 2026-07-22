@@ -1,5 +1,6 @@
 import Header from "../Components/header";
 import Footer from "../Components/footer";
+import Reveal from "../Components/Reveal";
 
 export const metadata = {
   title: "Terms & Conditions | MTAX Group of Companies",
@@ -34,7 +35,7 @@ export default function TermsConditions() {
         <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#1687FF]/10 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-[#1687FF]/10 blur-3xl" />
 
-        <div className="relative z-10 mx-auto w-full max-w-[1400px] px-6 py-14 sm:px-10 sm:py-16 lg:px-14 lg:py-20">
+        <div className="relative z-10 mx-auto w-full max-w-[1400px] px-6 py-14 sm:px-10 sm:py-16 lg:px-14 lg:py-20 animate-fade-in">
           <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-[#1687FF]">
             Legal
           </p>
@@ -52,10 +53,10 @@ export default function TermsConditions() {
       {/* Content */}
       <section className="w-full bg-white px-5 py-12 sm:px-8 md:py-16 lg:px-12">
         <div className="mx-auto flex w-full max-w-[1400px] flex-col gap-10 lg:flex-row lg:gap-14">
-      
+
 
           {/* Body */}
-          <article className="min-w-0 flex-1 text-[14px] leading-[1.8] text-gray-700 md:text-[16px] lg:text-[15px]">
+          <Reveal as="article" className="min-w-0 flex-1 text-[14px] leading-[1.8] text-gray-700 md:text-[16px] lg:text-[15px]">
             <p className="mb-8 text-[15px] leading-[1.8] text-gray-600 md:text-[16px]">
               These Terms &amp; Conditions ("Terms") govern your access to
               and use of the website and services provided by MTAX Group of
@@ -266,7 +267,7 @@ export default function TermsConditions() {
                 </p>
               </div>
             </TermsSection>
-          </article>
+          </Reveal>
         </div>
       </section>
 

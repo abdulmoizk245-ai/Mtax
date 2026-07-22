@@ -277,7 +277,7 @@ export default function EnergyCapabilitiesOverview() {
         </div>
 
         {/* Generator Overview Card */}
-        <article className="rounded-[11px] border border-[#E3E8E2] bg-white px-5 py-6 shadow-[0_5px_18px_rgba(24,40,30,0.06)] sm:px-6">
+        <article className="tilt-card rounded-[11px] border border-[#E3E8E2] bg-white px-5 py-6 shadow-[0_5px_18px_rgba(24,40,30,0.06)] sm:px-6">
           <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.06em] text-[#58AE36] sm:text-[11px]">
             Generator System Overview
           </p>
@@ -314,7 +314,7 @@ export default function EnergyCapabilitiesOverview() {
         </article>
 
         {/* Right Image */}
-        <div className="relative aspect-[1.72/1] w-full overflow-hidden rounded-[9px] bg-[#EEF1F0] shadow-[0_5px_15px_rgba(18,30,24,0.08)]">
+        <div className="tilt-card relative aspect-[1.72/1] w-full overflow-hidden rounded-[9px] bg-[#EEF1F0] shadow-[0_5px_15px_rgba(18,30,24,0.08)]">
           <Image
             src="/energy/capabilities-generators.png"
             alt="Industrial generator systems"

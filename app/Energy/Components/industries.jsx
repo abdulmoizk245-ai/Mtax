@@ -173,7 +173,7 @@ export default function EnergyIndustriesSupport() {
             {sectors.map((sector, index) => (
               <article
                 key={sector.title}
-                className="group overflow-hidden rounded-[6px] border border-[#77A72C]/55 bg-[#162029] shadow-[0_4px_12px_rgba(0,0,0,0.22)]"
+                className="tilt-card group overflow-hidden rounded-[6px] border border-[#77A72C]/55 bg-[#162029] shadow-[0_4px_12px_rgba(0,0,0,0.22)]"
               >
                 <div className="relative h-[105px] w-full overflow-hidden sm:h-[95px] xl:h-[112px]">
                   <Image

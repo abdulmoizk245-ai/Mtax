@@ -7,18 +7,19 @@ import TextileSolutions from "./components/textile";
 import FabricaGallery from "./components/gallery";
 import ContactPage from "../Components/contact";
 import Banner from "../Home/components/banner";
+import Reveal from "../Components/Reveal";
 
 export default function Fabric() {
     return (
         <>
         <Header />
         <FabricaHero />
-        <FabricaAbout />
-        <FabricaSolutions />
-        <TextileSolutions />
-        <FabricaGallery/>
-        <ContactPage/>
-        <Banner/>
+        <Reveal><FabricaAbout /></Reveal>
+        <Reveal delay={80}><FabricaSolutions /></Reveal>
+        <Reveal delay={80}><TextileSolutions /></Reveal>
+        <Reveal delay={80}><FabricaGallery/></Reveal>
+        <Reveal delay={80}><ContactPage/></Reveal>
+        <Reveal delay={80}><Banner/></Reveal>
         <Footer />
         </>
     )

@@ -90,7 +90,7 @@ export default function Energy() {
             {capacities.map((capacity) => (
               <article
                 key={capacity.value}
-                className="group relative flex min-h-[112px] flex-col items-center justify-center overflow-hidden rounded-[7px] border border-white/15 bg-gradient-to-b from-[#1D2935] to-[#141E29] px-3 py-4 text-center shadow-[0_5px_15px_rgba(0,0,0,0.22)] transition-all duration-300 hover:-translate-y-1 hover:border-[#8DFF00]/50"
+                className="tilt-card group relative flex min-h-[112px] flex-col items-center justify-center overflow-hidden rounded-[7px] border border-white/15 bg-gradient-to-b from-[#1D2935] to-[#141E29] px-3 py-4 text-center shadow-[0_5px_15px_rgba(0,0,0,0.22)] transition-colors duration-300 hover:border-[#8DFF00]/50"
               >
                 {/* Bottom Green Glow */}
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#8DFF00]/80 to-transparent shadow-[0_0_8px_rgba(141,255,0,0.55)]" />
@@ -130,7 +130,7 @@ export default function Energy() {
           {solutions.map((solution, index) => (
             <article
               key={solution.title}
-              className="group overflow-hidden rounded-[6px] border border-[#77952F]/45 bg-[#16212D] shadow-[0_5px_16px_rgba(0,0,0,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-[#8DFF00]/60"
+              className="tilt-card group overflow-hidden rounded-[6px] border border-[#77952F]/45 bg-[#16212D] shadow-[0_5px_16px_rgba(0,0,0,0.24)] transition-colors duration-300 hover:border-[#8DFF00]/60"
             >
               {/* Image */}
               <div className="relative h-[185px] w-full overflow-hidden sm:h-[195px] lg:h-[205px]">

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaSolarPanel, FaLaptopCode, FaArrowRight } from "react-icons/fa";
+import SplitHeading from "../../Components/SplitHeading";
+import Reveal from "../../Components/Reveal";
 
 export default function BlazeHero() {
   return (
@@ -17,13 +19,16 @@ export default function BlazeHero() {
       {/* Content */}
       <div className="relative z-10 mx-auto w-full  px-6 py-16 md:px-12">
         <div className="max-w-xl">
-          <h1 className="mb-2 text-4xl font-extrabold tracking-wide text-white md:text-[44px] lg:text-[60px]">
+          <SplitHeading
+            as="h1"
+            className="mb-2 text-4xl font-extrabold tracking-wide text-white md:text-[44px] lg:text-[60px]"
+          >
             BLAZE GROUP
-          </h1>
+          </SplitHeading>
 
-          <h2 className="mb-6 text-[26px] font-bold uppercase tracking-wide text-white md:text-[32px] lg:text-[27px]">
-            Powering A <span className="text-[#3aa0ff]">Smarter Future</span>
-          </h2>
+          <Reveal as="h2" delay={250} y={30} scale={0.94} rotate={0} className="mb-6 text-[26px] font-bold uppercase tracking-wide text-white md:text-[32px] lg:text-[27px]">
+            Powering A <span className="shimmer-text">Smarter Future</span>
+          </Reveal>
 
           <p className="mb-8 max-w-lg text-sm leading-relaxed text-gray-300 md:text-base">
             BLAZE brings together Blaze Solar Energy and Blaze Interactives
@@ -59,7 +64,7 @@ export default function BlazeHero() {
 
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-md bg-[#1375E6] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#0f5dbf]"
+            className="btn-shine btn-glow inline-flex items-center gap-2 rounded-md bg-[#1375E6] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#0f5dbf]"
           >
             Explore More <FaArrowRight aria-hidden />
           </Link>

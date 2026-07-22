@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import SplitHeading from "../../Components/SplitHeading";
+import Reveal from "../../Components/Reveal";
 
 export default function UniversalExportsHero() {
   return (
@@ -20,20 +22,23 @@ export default function UniversalExportsHero() {
       <div className="relative z-10 mx-auto w-full  px-6 py-16 sm:px-10 lg:px-14 xl:px-16">
         <div className="max-w-[560px]">
           {/* Main Heading */}
-          <h1 className="text-[34px] font-extrabold uppercase leading-none tracking-[-0.02em] text-white md:text-[42px] lg:text-[48px]">
+          <SplitHeading
+            as="h1"
+            className="text-[34px] font-extrabold uppercase leading-none tracking-[-0.02em] text-white md:text-[42px] lg:text-[48px]"
+          >
             Universal Exports
-          </h1>
+          </SplitHeading>
 
           {/* Small Label */}
-          <p className="mt-6 text-[10px] font-medium uppercase tracking-[0.08em] text-white sm:text-[11px]">
+          <p className="mt-6 animate-fade-in text-[10px] font-medium uppercase tracking-[0.08em] text-white sm:text-[11px]">
             Quality
           </p>
 
           {/* Subheading */}
-          <h2 className="mt-2 text-[26px] font-bold uppercase leading-[1.4] text-white md:text-[32px] lg:text-[18px]">
-            Premium <span className="text-[#3193FF]">Crepe</span> Fabrics &amp;{" "}
-            <span className="text-[#3193FF]">Threads</span>
-          </h2>
+          <Reveal as="h2" delay={250} y={30} scale={0.94} rotate={0} className="mt-2 text-[26px] font-bold uppercase leading-[1.4] text-white md:text-[32px] lg:text-[18px]">
+            Premium <span className="shimmer-text">Crepe</span> Fabrics &amp;{" "}
+            <span className="shimmer-text">Threads</span>
+          </Reveal>
 
           {/* Description */}
           <p className="mt-6 max-w-[500px] text-[14px] leading-[1.65] text-white/80 md:text-[16px] lg:text-[14px]">
@@ -51,7 +56,7 @@ export default function UniversalExportsHero() {
           {/* Button */}
           <Link
             href="/contact"
-            className="mt-8 inline-flex items-center gap-2 rounded-[3px] bg-[#2587E8] px-5 py-3 text-[13px] font-semibold text-white shadow-[0_8px_22px_rgba(37,135,232,0.25)] transition duration-300 hover:bg-[#1674D3] md:text-[14px] lg:text-[12px]"
+            className="btn-shine btn-glow mt-8 inline-flex items-center gap-2 rounded-[3px] bg-[#2587E8] px-5 py-3 text-[13px] font-semibold text-white shadow-[0_8px_22px_rgba(37,135,232,0.25)] transition duration-300 hover:bg-[#1674D3] md:text-[14px] lg:text-[12px]"
           >
             <span>Explore Crepe Fabrics</span>
             <span aria-hidden="true">→</span>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight, FaBolt } from "react-icons/fa";
+import Reveal from "../../Components/Reveal";
 
 export default function EnergyHero() {
   return (
@@ -25,17 +26,17 @@ export default function EnergyHero() {
       <div className="relative z-30 mx-auto w-full  px-6 py-16 sm:px-9 md:px-12 lg:px-14">
         <div className="max-w-[555px]">
           {/* Main Heading */}
-          <h1 className="text-[35px] font-extrabold uppercase leading-none tracking-[-0.02em] text-white md:text-[43px] lg:text-[47px]">
-            De Novo <span className="text-[#28D947]">Energy</span>
-          </h1>
+          <Reveal as="h1" y={40} scale={0.9} rotate={-2} className="text-[35px] font-extrabold uppercase leading-none tracking-[-0.02em] text-white md:text-[43px] lg:text-[47px]">
+            De Novo <span className="shimmer-text-green">Energy</span>
+          </Reveal>
 
           {/* Subtitle */}
-          <h2 className="mt-5 max-w-[520px] text-[26px] font-extrabold uppercase leading-[1.45] text-white md:text-[32px] lg:text-[18px]">
+          <Reveal as="h2" delay={250} y={30} scale={0.94} rotate={0} className="mt-5 max-w-[520px] text-[26px] font-extrabold uppercase leading-[1.45] text-white md:text-[32px] lg:text-[18px]">
             Reliable Generator Supply for
             <br className="hidden sm:block" />{" "}
-            <span className="text-[#28D947]">Commercial</span> and Industrial
+            <span className="shimmer-text-green">Commercial</span> and Industrial
             Power Needs
-          </h2>
+          </Reveal>
 
           {/* Description */}
           <p className="mt-5 max-w-[510px] text-[14px] leading-[1.65] text-white/75 md:text-[16px] lg:text-[14px]">
@@ -50,7 +51,7 @@ export default function EnergyHero() {
           <Link
             href="/contact"
             aria-label="Explore Power Solutions"
-            className="mt-8 inline-flex items-center gap-2 rounded-[3px] bg-[#2BD94C] px-5 py-3 text-[13px] font-semibold text-white shadow-[0_8px_24px_rgba(43,217,76,0.22)] transition duration-300 hover:bg-[#23C941] md:text-[14px] lg:text-[13px]"
+            className="btn-shine btn-glow btn-glow-green mt-8 inline-flex items-center gap-2 rounded-[3px] bg-[#2BD94C] px-5 py-3 text-[13px] font-semibold text-white shadow-[0_8px_24px_rgba(43,217,76,0.22)] transition duration-300 hover:bg-[#23C941] md:text-[14px] lg:text-[13px]"
           >
             <span>Explore Power Solutions</span>
             <FaArrowRight className="text-[10px]" aria-hidden="true" />
@@ -59,7 +60,7 @@ export default function EnergyHero() {
       </div>
 
       {/* Power Range Badge */}
-      <div className="absolute bottom-6 right-5 z-30 flex min-h-[92px] w-[300px] max-w-[calc(100%-40px)] items-center gap-4 rounded-[5px] border border-white/20 bg-[#131816]/80 px-5 py-4 shadow-[0_8px_28px_rgba(0,0,0,0.35)] backdrop-blur-[5px] sm:right-8 lg:bottom-8 lg:right-10 lg:w-[330px]">
+      <div className="tilt-card absolute bottom-6 right-5 z-30 flex min-h-[92px] w-[300px] max-w-[calc(100%-40px)] items-center gap-4 rounded-[5px] border border-white/20 bg-[#131816]/80 px-5 py-4 shadow-[0_8px_28px_rgba(0,0,0,0.35)] backdrop-blur-[5px] sm:right-8 lg:bottom-8 lg:right-10 lg:w-[330px]">
         {/* Bolt Circle */}
         <div
           className="flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-full border border-[#39FF14]/60 bg-[#10210F]/80"

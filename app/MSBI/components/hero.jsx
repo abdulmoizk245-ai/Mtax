@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaGlobeAmericas, FaMedal, FaHeadset } from "react-icons/fa";
+import SplitHeading from "../../Components/SplitHeading";
+import Reveal from "../../Components/Reveal";
 
 const features = [
   {
@@ -35,18 +37,21 @@ export default function MSBIHero() {
     
       {/* Content */}
       <div className="relative z-10 mx-auto w-full  px-6 py-20 md:px-12">
-        <h1 className="mb-2 text-4xl font-extrabold tracking-wide text-white md:text-[44px] lg:text-[60px]">
+        <SplitHeading
+          as="h1"
+          className="mb-2 text-4xl font-extrabold tracking-wide text-white md:text-[44px] lg:text-[60px]"
+        >
           MSBI
-        </h1>
+        </SplitHeading>
 
-        <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-[#1375E6] md:text-sm">
+        <p className="mb-3 animate-fade-in text-xs font-bold uppercase tracking-[0.2em] text-[#1375E6] md:text-sm">
           Premium Tires
         </p>
 
-        <h2 className="mb-6 max-w-2xl text-[26px] font-extrabold uppercase leading-snug text-white md:text-4xl">
-          <span className="text-[#1375E6]">Powering</span> Progress
+        <Reveal as="h2" delay={250} y={30} scale={0.94} rotate={0} className="mb-6 max-w-2xl text-[26px] font-extrabold uppercase leading-snug text-white md:text-4xl">
+          <span className="shimmer-text">Powering</span> Progress
           Delivering Trust
-        </h2>
+        </Reveal>
 
         <p className="mb-10 max-w-xl text-sm leading-relaxed text-gray-300 md:text-base">
           MSBI International delivers premium tire solutions built on proven
@@ -57,7 +62,7 @@ export default function MSBIHero() {
         <div className="mb-10 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-3">
           {features.map((feature, index) => (
             <div key={index} className="flex items-start gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1375E6]/15 text-lg text-[#1375E6]">
+              <div className="tilt-card flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1375E6]/15 text-lg text-[#1375E6]">
                 {feature.icon}
               </div>
               <div>
@@ -74,7 +79,7 @@ export default function MSBIHero() {
 
         <Link
           href="/contact"
-          className="inline-flex items-center gap-2 rounded-md bg-[#1375E6] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#0f5dbf]"
+          className="btn-shine btn-glow inline-flex items-center gap-2 rounded-md bg-[#1375E6] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#0f5dbf]"
         >
           Explore Power Solutions <span aria-hidden>→</span>
         </Link>

@@ -111,7 +111,7 @@ export default function FeatureSection() {
           {bottomCards.map((card, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 rounded-xl border border-[#E5EAF3] bg-white px-4 py-5"
+              className="tilt-card flex items-start gap-4 rounded-xl border border-[#E5EAF3] bg-white px-4 py-5"
             >
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg  text-2xl text-[#1375E6]">
                 {card.icon}

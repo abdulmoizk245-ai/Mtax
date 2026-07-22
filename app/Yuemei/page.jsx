@@ -8,6 +8,7 @@ import YuemeiBanner from "./components/Banner";
 import Footer from "../Components/footer";
 import Banner from "../Home/components/banner";
 import ContactPage from "../Components/contact";
+import Reveal from "../Components/Reveal";
 
 export default function Yuemei()
 {
@@ -15,12 +16,12 @@ export default function Yuemei()
         <>
         <Header/>
         <HeroSection/>
-        <AboutYuemei/>
-        <FeatureSection/>
-        <ProductRange/>
-        <YuemeiBanner/>
-        <ContactPage/>
-        <Banner/>
+        <Reveal><AboutYuemei/></Reveal>
+        <Reveal delay={80}><FeatureSection/></Reveal>
+        <Reveal delay={80}><ProductRange/></Reveal>
+        <Reveal delay={80}><YuemeiBanner/></Reveal>
+        <Reveal delay={80}><ContactPage/></Reveal>
+        <Reveal delay={80}><Banner/></Reveal>
         <Footer/>
         </>
     )

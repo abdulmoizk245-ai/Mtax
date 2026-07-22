@@ -51,7 +51,7 @@ export default function ProductRange() {
           {products.map((product) => (
             <article
               key={product.name}
-              className="group flex min-h-[390px] flex-col overflow-hidden rounded-[11px] border-[2px] border-[#26344F] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-[0_10px_25px_rgba(25,36,58,0.15)]"
+              className="tilt-card group flex min-h-[390px] flex-col overflow-hidden rounded-[11px] border-[2px] border-[#26344F] bg-white"
             >
               {/* Product Image */}
               <div className="relative h-[335px] w-full overflow-hidden bg-[#F8FAFC]">

@@ -7,6 +7,7 @@ import CraftedElegance from "./Components/crafted";
 import ShamoozHero from "./Components/hero";
 import ShamoozProductRange from "./Components/product";
 import WhyChooseShamooz from "./Components/whychoose";
+import Reveal from "../Components/Reveal";
 
 
 export default function ShamoozPage() {
@@ -14,12 +15,12 @@ export default function ShamoozPage() {
         <>
         <Header/>
         <ShamoozHero/>
-        <AboutShamooz/>
-        <ShamoozProductRange/>
-        <CraftedElegance/>
-        <WhyChooseShamooz/>
-        <ContactPage/>
-        <Banner/>
+        <Reveal><AboutShamooz/></Reveal>
+        <Reveal delay={80}><ShamoozProductRange/></Reveal>
+        <Reveal delay={80}><CraftedElegance/></Reveal>
+        <Reveal delay={80}><WhyChooseShamooz/></Reveal>
+        <Reveal delay={80}><ContactPage/></Reveal>
+        <Reveal delay={80}><Banner/></Reveal>
         <Footer/>
         </>
     )

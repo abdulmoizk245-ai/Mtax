@@ -67,7 +67,7 @@ export default function FabricaGallery() {
           {galleryImages.map((item, index) => (
             <article
               key={item.id}
-              className="group relative overflow-hidden rounded-[12px] border border-[#4D6C98] bg-[#0D1728] p-[4px]"
+              className="tilt-card group relative overflow-hidden rounded-[12px] border border-[#4D6C98] bg-[#0D1728] p-[4px]"
               style={{
                 boxShadow:
                   "0 0 6px rgba(22,135,255,0.28), inset 0 0 10px rgba(22,135,255,0.08)",
