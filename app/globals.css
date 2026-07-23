@@ -145,16 +145,15 @@ body {
   animation-delay: var(--word-delay, 0ms);
 }
 
-/* ---------- 3D tilt cards ---------- */
+/* ---------- Card hover highlight ---------- */
 .tilt-card {
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease;
-  transform-style: preserve-3d;
-  will-change: transform;
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+  border: 1px solid transparent;
 }
 
 .tilt-card:hover {
-  transform: perspective(900px) rotateX(6deg) rotateY(-6deg) scale(1.045) translateY(-6px);
-  box-shadow: 0 24px 48px -12px rgba(13, 140, 255, 0.35), 0 0 0 1px rgba(13, 140, 255, 0.25);
+  border-color: rgba(13, 140, 255, 0.55);
+  box-shadow: 0 0 0 4px rgba(13, 140, 255, 0.18), 0 0 24px rgba(13, 140, 255, 0.35);
   z-index: 5;
 }
 
@@ -267,10 +266,6 @@ body {
 
   .split-word {
     opacity: 1 !important;
-  }
-
-  .tilt-card:hover {
-    transform: none !important;
   }
 
   ::view-transition-old(*),

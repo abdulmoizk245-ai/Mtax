@@ -74,7 +74,7 @@ export default function OurCompanies() {
               <span className="text-[#1687FF]">Our</span> Vision
             </h2>
 
-            <p className="mt-3 max-w-[1380px] text-[14px] font-normal leading-[1.5] text-[#4D5664] md:text-[16px] lg:text-[14px]">
+            <p className="mt-3 max-w-[1380px] text-[14px] font-normal leading-[1.5] text-[#4D5664] md:text-[16px] lg:text-[16px]">
               To become a trusted, forward-thinking, and progressive business
               group known for delivering quality, innovation, and service
               excellence across every industry we serve. Our vision is to build
@@ -91,7 +91,7 @@ export default function OurCompanies() {
               <span className="text-[#1687FF]">Our</span> Mission
             </h2>
 
-            <p className="mt-3 max-w-[1380px] text-[14px] font-normal leading-[1.5] text-[#4D5664] md:text-[16px] lg:text-[14px]">
+            <p className="mt-3 max-w-[1380px] text-[14px] font-normal leading-[1.5] text-[#4D5664] md:text-[16px] lg:text-[16px]">
               To deliver reliable products, professional services, and
               value-driven business solutions with integrity, care, and
               commitment. Our mission is to support our clients through

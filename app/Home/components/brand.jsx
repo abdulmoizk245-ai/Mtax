@@ -38,6 +38,7 @@ export default function Brand() {
         <div
           className="
             relative overflow-hidden
+            py-3
             [mask-image:linear-gradient(90deg,transparent,#000_8%,#000_92%,transparent)]
           "
         >
